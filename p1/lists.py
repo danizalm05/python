@@ -6,6 +6,8 @@ la = str.split('@') # create list from a string Sprating char is '@'
 la = str.split()    # create list from a string Sprating char is ' '
 str = '*'.join(la)  # Create a string from a list
 L.append('asw')    # Add item as last item
+L +=  'asw'        # Add item as last item
+l[i] = 'fff'       # Change item in index i
 L.clear()          # remove all items from L
 L.index(value, [start, [stop]]) #- return first index of value.
                                    Raises ValueError if the value is not present.
@@ -23,7 +25,13 @@ L.sort(key=len)     #sort according to length
 
 la= str.split('#') #
 
+maxL = max(L)
+newL = sorted(L) # Returns  a new list
+newL = sorted(L,key=len) # Returns  the sorted  list
+                          according to length of item
+
 list comprehensions
+
 -------------------------
 s= [i**2 for i in range(100) if i%2==0] Create  list of x**2 for even numbers
 
@@ -356,3 +364,11 @@ for i in range(1, 10):
     print()
 
     # 23:31
+''' 
+def format_list(L):
+  return ", ".join(L[0::2]) + " and " + L[-1]
+
+my_list = ["hydrogen", "helium", "lithium", "beryllium", "boron", "magnesium"]
+print( format_list(my_list) )
+
+'''
