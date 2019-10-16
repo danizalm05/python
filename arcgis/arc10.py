@@ -3,7 +3,7 @@ from arcpy import env
 
   
 env.workspace = 'c:/temp/'
-fname = "us_boundaries.shp"   #dbf: dbf     shp: FeatureClass
+fname = "us_boundaries.shp"   #   dbf: dbf     shp: FeatureClass
 
 path = "C:/Users/rockman/Documents/ArcGIS/samples-data/itom/Geog485/Lesson1/"
 pFile = path + fname
