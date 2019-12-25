@@ -2,6 +2,6 @@
 
 print("Enter your name:")
 
-x = input()
+#x = input()
 
-print("Hello, " + x)
+print("Hello, "  )
