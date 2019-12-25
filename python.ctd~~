@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <cherrytree>
-	<node custom_icon_id="0" foreground="" is_bold="True" name="Deep Learning " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576673472.48" ts_lastsave="1577261647.25" unique_id="1">
+	<node custom_icon_id="0" foreground="" is_bold="True" name="Deep Learning " prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576673472.48" ts_lastsave="1576673734.04" unique_id="1">
 		<rich_text>
 </rich_text>
 		<rich_text scale="h1">Deep Learning Tutorial in Python </rich_text>
@@ -122,27 +122,6 @@ file/open/github  an  enter:  jeffheaton
 or open this  url
 </rich_text>
 			<rich_text link="webs https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/">https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/</rich_text>
-		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="spell" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577261647.25" ts_lastsave="1577264082.83" unique_id="4">
-			<rich_text>Spell (for Machine Learning in the Cloud)
-</rich_text>
-			<rich_text link="webs https://web.spell.run/zamberg/runs">https://web.spell.run/zamberg/runs</rich_text>
-			<rich_text>
-
-
-</rich_text>
-			<rich_text underline="single">Introduction to Spell (for Machine Learning in the Cloud):</rich_text>
-			<rich_text>
-
-</rich_text>
-			<rich_text link="webs https://www.youtube.com/watch?v=ggBOAPtFjYU&amp;list=PLRqwX-V7Uu6Y6kSfxOjq5zk4gkDK8q_n1">https://www.youtube.com/watch?v=ggBOAPtFjYU&amp;list=PLRqwX-V7Uu6Y6kSfxOjq5zk4gkDK8q_n1</rich_text>
-			<rich_text>
-
-1. pip install  spell
-2. spell login    zamberg    6gpzbl312
-3. spell whoami   
-4. spell  run   echo    kkkkkkkkkk# runing simple command
-9:27</rich_text>
 		</node>
 	</node>
 </cherrytree>
