@@ -123,7 +123,7 @@ or open this  url
 </rich_text>
 			<rich_text link="webs https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/">https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="spell" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577261647.25" ts_lastsave="1577264082.83" unique_id="4">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="spell" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577261647.25" ts_lastsave="1577277179.61" unique_id="4">
 			<rich_text>Spell (for Machine Learning in the Cloud)
 </rich_text>
 			<rich_text link="webs https://web.spell.run/zamberg/runs">https://web.spell.run/zamberg/runs</rich_text>
@@ -137,12 +137,14 @@ or open this  url
 </rich_text>
 			<rich_text link="webs https://www.youtube.com/watch?v=ggBOAPtFjYU&amp;list=PLRqwX-V7Uu6Y6kSfxOjq5zk4gkDK8q_n1">https://www.youtube.com/watch?v=ggBOAPtFjYU&amp;list=PLRqwX-V7Uu6Y6kSfxOjq5zk4gkDK8q_n1</rich_text>
 			<rich_text>
+pip install  spell
 
-1. pip install  spell
-2. spell login    zamberg    6gpzbl312
-3. spell whoami   
-4. spell  run   echo    kkkkkkkkkk# runing simple command
-9:27</rich_text>
+ spell login    zamberg    6gpzbl312
+
+4. spell whoami   
+5. spell  run   echo    kkkkkkkkkk# runing simple command
+6. run a python program:     spell run  python inp.py 
+ spell cp runs/9</rich_text>
 		</node>
 	</node>
 </cherrytree>
