@@ -8,7 +8,7 @@
 
 </rich_text>
 		<rich_text link="webs https://www.youtube.com/watch?v=gWfVwnOyG78&amp;list=PLnjEM1fs09cE7SAFuvU1URVgbBgXZnNmF">https://www.youtube.com/watch?v=gWfVwnOyG78&amp;list=PLnjEM1fs09cE7SAFuvU1URVgbBgXZnNmF</rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="install tesorflow" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576673734.04" ts_lastsave="1577022725.76" unique_id="2">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="install tesorflow" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576673734.04" ts_lastsave="1577626532.06" unique_id="2">
 			<rich_text>1 Start  anaconda
 2 Create a new environment 
 3 Check All and search for  tensorflow
@@ -99,13 +99,17 @@ install all file from the  list in url:(The list is at the end of page)
 			<rich_text family="monospace">conda update -y --all</rich_text>
 			<rich_text>
 
-testing
-1 import tensorflow  as  tf
-2 print: print(tf.__version__) # 2.0.0-beta1
 
-1  conda activate tensorflow
+A. testing:
 
-2  Connect  jupyter to  tensorflow:
+ 1. conda activate tensorflow
+ 2 run python
+ 3 import tensorflow  as  tf
+ 4print: print(tf.__version__) # 2.0.0-beta1
+ 
+ 
+
+B.  Connect  jupyter to  tensorflow:
  </rich_text>
 			<rich_text family="monospace">python -m ipykernel install --user --name tensorflow --display-name &quot;Python 3.6 (tensorflow)&quot;</rich_text>
 		</node>
