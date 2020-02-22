@@ -1,0 +1,405 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1582361794.17" unique_id="6">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Python Server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="5">
+			<rich_text> python HTTPServer
+ 1. Move to the Dir of  your project.
+ 2. Type in Terminal:
+        python -m SimpleHTTPServer
+    Or if you are using Python 3, type:
+        python -m http.server
+ 3. visit </rich_text>
+			<rich_text link="webs http://localhost:8000">http://localhost:8000</rich_text>
+			<rich_text> on your browser.</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Deep learning" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582361573.46" ts_lastsave="1582361677.85" unique_id="13">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Install tenserflow" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582361612.1" ts_lastsave="1582361625.06" unique_id="14">
+				<rich_text>1 Start  anaconda
+2 Create a new environment 
+3 Check All and search for  tensorflow
+4 Check tensor
+5 Applly the change
+6 From Pycharm create a new project and chose the env of stage 2
+
+ 
+        </rich_text>
+				<rich_text link="webs https://www.youtube.com/channel/UCR1-GEpyOPzT2AO4D_eifdw">Jeff Heaton</rich_text>
+				<rich_text>    /t81-558/
+      
+github   </rich_text>
+				<rich_text link="webs https://github.com/jeffheaton/t81_558_deep_learning">https://github.com/jeffheaton/t81_558_deep_learning</rich_text>
+				<rich_text>                
+youtube </rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=59duINoc8GM">https://www.youtube.com/watch?v=59duINoc8GM</rich_text>
+				<rich_text>
+
+
+
+install miniconda from:</rich_text>
+				<rich_text link="webs https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</rich_text>
+				<rich_text>
+
+
+1 open anaconda prompet
+2 run:     </rich_text>
+				<rich_text family="monospace">conda create -y --name tensorflow python=3.6</rich_text>
+				<rich_text>
+To activate this environment, use
+   $ conda activate tensorflow
+ 
+    $ conda deactivate
+ After this, base has cchanged to TensorFlow   
+ if we print python --version we get :
+                      Python 3.6.9 :: Anaconda, Inc.
+                      
+ 3  </rich_text>
+				<rich_text scale="h1">Installing Jupyter </rich_text>
+				<rich_text>
+it is easy to install Jupyter notebooks with the following command:
+</rich_text>
+				<rich_text family="monospace">conda install -y jupyter</rich_text>
+				<rich_text>
+Once Jupyter is installed, it is started with the following command:
+</rich_text>
+				<rich_text family="monospace">jupyter notebook</rich_text>
+				<rich_text>                
+
+
+
+</rich_text>
+				<rich_text link="webs https://stackoverflow.com/questions/39759623/jupyter-notebook-server-password-invalid">https://stackoverflow.com/questions/39759623/jupyter-notebook-server-password-invalid</rich_text>
+				<rich_text>
+change password:    jupyter notebook password   #lu 5
+
+install all file from the  list in url:(The list is at the end of page)
+</rich_text>
+				<rich_text link="webs https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_01_1_overview.ipynb">https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_01_1_overview.ipynb</rich_text>
+				<rich_text>
+ </rich_text>
+				<rich_text family="monospace">
+1 conda install -y scipy
+2  pip install --exists-action i --upgrade sklearn
+3  pip install --exists-action i --upgrade pandas
+</rich_text>
+				<rich_text> 
+4    </rich_text>
+				<rich_text family="monospace">pip install --exists-action i --upgrade pandas-datareader
+5  pip install --exists-action i --upgrade matplotlib
+6  pip install --exists-action i --upgrade pillow
+7  pip install --exists-action i --upgrade tqdm
+8  pip install --exists-action i --upgrade requests
+9  pip install --exists-action i --upgrade h5py
+10 pip install --exists-action i --upgrade pyyaml
+11 pip install --exists-action i --upgrade tensorflow_hub
+12 pip install --exists-action i --upgrade bayesian-optimization
+13 pip install --exists-action i --upgrade spacy
+14 pip install --exists-action i --upgrade gensim
+15 pip install --exists-action i --upgrade flask
+16 pip install --exists-action i --upgrade boto3
+17 pip install --exists-action i --upgrade gym
+18 pip install --exists-action i --upgrade tensorflow==2.0.0-beta1
+19 pip install --exists-action i --upgrade keras-rl2 --user</rich_text>
+				<rich_text>
+20 </rich_text>
+				<rich_text family="monospace">conda update -y --all</rich_text>
+				<rich_text>
+
+
+A. testing:
+
+ 1. conda activate tensorflow
+ 2 run python
+ 3 import tensorflow  as  tf
+ 4print: print(tf.__version__) # 2.0.0-beta1
+ 
+ 
+
+B.  Connect  jupyter to  tensorflow:
+ </rich_text>
+				<rich_text family="monospace">python -m ipykernel install --user --name tensorflow --display-name &quot;Python 3.6 (tensorflow)&quot;</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Using Google  Colab" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582361677.85" ts_lastsave="1582361688.87" unique_id="15">
+				<rich_text>How to  Colab:   
+</rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=Pt-Od-oBgOM&amp;list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN&amp;index=9">https://www.youtube.com/watch?v=Pt-Od-oBgOM&amp;list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN&amp;index=9</rich_text>
+				<rich_text>
+CoLab:     </rich_text>
+				<rich_text link="webs https://colab.research.google.com/notebooks/welcome.ipynb">https://colab.research.google.com/notebooks/welcome.ipynb</rich_text>
+				<rich_text>
+
+file/open/github  an  enter:  jeffheaton
+or open this  url
+</rich_text>
+				<rich_text link="webs https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/">https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Virtual Environment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582361794.17" ts_lastsave="1582361821.2" unique_id="16">
+			<rich_text scale="h2" weight="heavy">Creating a virtual environment  </rich_text>
+			<rich_text>
+ 
+1.  virtualenv scrapingEnv
+
+Creates a new environment called scrapingEnv, which you must activate to use:
+
+2.  cd scrapingEnv/
+3.  source bin/activate
+
+After you have activated the environment, you will see that environment’s name in your command-line prompt 
+ 
+Working in the newly created scrapingEnv environment, you can install and use
+BeautifulSoup; for instance:
+
+(scrapingEnv)ryan$ pip install beautifulsoup4
+(scrapingEnv)ryan$ python
+&gt; from bs4 import BeautifulSoup
+
+You can leave the environment with the deactivate command, after which you can
+no longer access any libraries that were installed inside the virtual environment:
+ 
+Keeping all your libraries separated by project also makes it easy to zip up the entire environment folder  
+ 
+  you can apply a virtual environment anytime simply
+by activating it beforehand.</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="information" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1581703359.02" ts_lastsave="1581703372.54" unique_id="11">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="nmap" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1581703372.54" ts_lastsave="1582309514.33" unique_id="12">
+			<rich_text link="webs https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap">https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap</rich_text>
+			<rich_text>
+
+
+
+ Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responsesls
+</rich_text>
+			<rich_text link="webs https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4">https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4</rich_text>
+			<rich_text>
+
+nmap -help
+nmap -v -A scanme.nmap.org
+nslookup  : ip
+
+ifconfig   etho : inet  10.0.2.15
+scan and output  results  to  a file named res
+nmap -oG - 10.0.2.0-255 -vv &gt;  res 
+scan for  port  22  and output  results  to  a file named res
+nmap -oG - 10.0.2.0-255 -p 22 -vv &gt;  res 
+
+nmap --help 
+nmap -0  
+nmap -A  &lt;addr&gt;     # find os
+nmap -sV &lt;addr&gt;    #Find services
+nmap -F  &lt;addr&gt;    #Most commanly  targeted ports
+</rich_text>
+			<rich_text link="webs https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7">https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7</rich_text>
+			<rich_text>
+6:00
+nmap --open
+
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Zero to Hero" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name=" Episode 1 " prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1581703320.54" unique_id="2">
+			<rich_text scale="h3"> </rich_text>
+			<rich_text> </rich_text>
+			<rich_text link="webs https://www.youtube.com/watch?v=qlK174d_uu8&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj">https://www.youtube.com/watch?v=qlK174d_uu8&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj</rich_text>
+			<rich_text>
+ 
+</rich_text>
+			<rich_text scale="h1">impacket </rich_text>
+			<rich_text>: collection of Python classes for working with network protocols. 
+ </rich_text>
+			<rich_text link="webs https://github.com/SecureAuthCorp/impacket">https://github.com/SecureAuthCorp/impacket</rich_text>
+			<rich_text>
+ 
+</rich_text>
+			<rich_text underline="single" weight="heavy"> install impacket</rich_text>
+			<rich_text>   1:16
+ 1.  sudo apt purge *impacket* :  uninstall
+ 2.  cd /opt 
+ 3.  sudo git  clone </rich_text>
+			<rich_text link="webs https://github.com/SecureAuthCorp/impacket.git">https://github.com/SecureAuthCorp/impacket.git</rich_text>
+			<rich_text>
+ 4.  cd /impacket
+ 5. run ‘ sudo </rich_text>
+			<rich_text family="monospace">pip install .</rich_text>
+			<rich_text>  ’  from the directory where you placed it
+ 
+</rich_text>
+			<rich_text scale="h3"> </rich_text>
+			<rich_text scale="h3" underline="single">starting  service </rich_text>
+			<rich_text> 1:20
+ 1.  sudo service apache2 start : Starting webserver(127.0.0.1)
+      service apache2 stop : Stopping web server apache2     
+ 2.  sudo service ssh start
+ 3.  sudo service postgresql start : Starting PostgreSQL  database server
+
+
+</rich_text>
+			<rich_text scale="h3" underline="single">enable/disable services in  Systemd init</rich_text>
+			<rich_text> 1:21:05
+  </rich_text>
+			<rich_text family="monospace">sudo dpkg -l | grep systemd</rich_text>
+			<rich_text>: check if systemd package is   
+   systemctl enable    apache2: </rich_text>
+			<rich_text background="#dda0225f225f"> Problem    commmand not found</rich_text>
+			<rich_text>
+
+1:23
+</rich_text>
+			<rich_text foreground="#e7ca56701706" scale="h3" underline="single" weight="heavy">Creating scripts that cut the ip from succesfull ping commad</rich_text>
+			<rich_text>:
+
+1. Store output of ping in “ip.txt” :  ping -c 1  127.0.0.1 &gt; ip.txt
+2. Pull address in sucssefull result:   cat ip.txt | grep &quot;64 bytes&quot; | cut -d &quot; &quot; -f 4 | tr -d &quot;:&quot;
+      If command failes noting will be returned.   1:28:16
+3.The script   </rich_text>
+			<rich_text underline="single" weight="heavy"> ipsweep.sh</rich_text>
+			<rich_text>
+ 
+#!/bin/bash
+if [&quot;$1&quot; == &quot;&quot;]
+then
+echo &quot;Missing Ip Address&quot;
+echo &quot;Syntax: ./ipsweep.sh &lt;ip address&gt; &quot;
+else
+for ip in `seq 1 254`; do
+ping -c 1 $1.$ip | grep &quot;64 bytes&quot; | cut -d &quot; &quot; -f 4 | tr -d &quot;:&quot; &amp;
+done
+fi
+# Calling the script: ./ipsweep.sh 127.0.0 #  $1 is the input ip = 127.0.0
+# To output to a file:  ./ipsweep.sh 127.0.0 &gt; iplist.txt
+# This script will scan ip from 127.0.0.1 to 127.0.0.255
+# The ‘&amp;’ sign will do the scanning for all ip togther. without it will be done sepratly for every ip
+1:38:00
+Print content of file iplist.txt
+      for ip in $(cat iplist.txt); do echo $ip; done
+Runing nmap for every ip in file iplist.txt
+      for ip in $(cat ip.list); do nmap P80 -T4 $ip; done
+  
+
+     
+ </rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1579427952.82" unique_id="3">
+				<rich_text>ifconfig:
+iwconfig:
+ping:
+arp -a:
+netstat -ano:     Active Internet connections (servers and established)
+route:  Kernel IP   routing
+python  -m SimpleHTTPServer  80:  Strat a server
+ </rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="file system" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="4">
+				<rich_text>cmd - current directory
+ cd Desktop/ - move to desktop directory
+ mkdir  &lt;dir name&gt;  - create  directory
+1.   rmdir  &lt;dir name&gt;  - remove directory
+2.   cherrytree - 
+3.   man 
+4.   echo “Hello” &gt; new.txt - Print ‘hello’ in the ‘new.txt’  file
+5.   rm   new.txt - delete ‘new.txt’  file
+6.   mv &lt;file&gt;  &lt;destinatio&gt;
+7.   locate &lt;file&gt; - locate a file
+8.   update
+9.   chmod +x &lt;file&gt;
+10.  cat  /etc/passwd
+11.  cat  /etc/shadow - show content of shadow file
+12.  su &lt;user name&gt;  -  Switch to anoter user
+13.  history:  list history  of commands
+            history | grep ping
+14.  cat 
+15.  touch &lt;file name &gt;: Create  file 
+ 
+17.  sudo apt purge *impacket* :  uninstall
+18. cd /opt 
+19. sudo git  clone </rich_text>
+				<rich_text link="webs https://github.com/SecureAuthCorp/impacket.git">https://github.com/SecureAuthCorp/impacket.git</rich_text>
+				<rich_text>
+
+ 
+
+ 
+ 
+ </rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="i" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1581703334.48" ts_lastsave="1581703334.48" unique_id="10">
+			<rich_text></rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="information" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1581703320.54" ts_lastsave="1581703320.54" unique_id="9">
+			<rich_text></rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Episode 2-3" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1577467505.67" unique_id="8">
+			<rich_text link="webs https://www.youtube.com/watch?v=egg-GoT5iVk&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=2">https://www.youtube.com/watch?v=egg-GoT5iVk&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=2</rich_text>
+			<rich_text>
+ </rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1579440573.27" unique_id="7">
+				<rich_text>
+12:50
+ 
+#! /usr/bin/python3
+#To find location of python3 print 'which python3&quot;
+#zero to Hero Pentesting: Episode 2 - Python 101
+#https://www.youtube.com/watch?v=egg-GoT5iVk&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=2
+# 14:12
+print(&quot;String and Things&quot;)
+print(&quot;&quot;&quot;Hello in multlin
+string 
+string &quot;&quot;&quot;)
+print (50//4) # 12
+print (50%4) # 2
+qu =&quot; All the love of the world&quot;
+print (len(qu))
+print (qu.upper())
+print (qu.lower())
+print (qu.title())
+ 
+#25:00
+#31.44  functions
+
+#1:18
+week 3:  </rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=3GriwyvJzio&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=3">https://www.youtube.com/watch?v=3GriwyvJzio&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=3</rich_text>
+				<rich_text>
+
+48:00
+python  -m SimpleHTTPServer  80:  Strat a server
+
+52:00
+# scanner.py
+
+#! /usr/bin/python3
+#</rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=3GriwyvJzio&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=3">https://www.youtube.com/watch?v=3GriwyvJzio&amp;list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj&amp;index=3</rich_text>
+				<rich_text>
+
+# ./scanner.py </rich_text>
+				<rich_text link="webs http://www.yahoo.com">www.yahoo.com</rich_text>
+				<rich_text>
+
+
+import sys #allows  command line argument
+import  socket 
+from datetime import datetime
+#define our target
+if len(sys.argv) ==2 :
+    target = socket.gethostbyname(sys.argv[1])#Translte a host name
+    print (target)
+else:
+   print(&quot;Invalid amount of arguments&quot;)
+   print(&quot;Syntax: /scanner.py &lt;ip&gt;&quot;)
+   sys.exit()
+#Add  pretty banner
+print(&quot;*&quot; * 50)
+print(&quot;Scannig target &quot; + target)
+print(&quot;time started &quot;+ str(datetime.now()))   #1:01:45
+</rich_text>
+			</node>
+		</node>
+	</node>
+</cherrytree>
