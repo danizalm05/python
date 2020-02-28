@@ -292,8 +292,8 @@ zenmap  =  Grapical  interface  for  nmap
 
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Macchanger" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582793663.88" ts_lastsave="1582918658.99" unique_id="7">
-				<rich_text>macchanger   --help
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Macchanger" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582793663.88" ts_lastsave="1582793675.42" unique_id="7">
+				<rich_text>macchanger  --help
 macchanger -s  etho  // Show current mac
 macchanger -a  etho // Change mac address to a random address
 macchanger -p  etho // Reset to the  original mac  address</rich_text>
