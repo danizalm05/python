@@ -1,10 +1,22 @@
-<?xml version="1.0" ?><cherrytree><node name="python" prog_lang="custom-colors" readonly="False" tags="" unique_id="6"><rich_text></rich_text><node name="Python Server" prog_lang="custom-colors" readonly="False" tags="" unique_id="5"><rich_text> python HTTPServer
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="6">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Python Server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="5">
+			<rich_text> python HTTPServer
  1. Move to the Dir of  your project.
  2. Type in Terminal:
         python -m SimpleHTTPServer
     Or if you are using Python 3, type:
         python -m http.server
- 3. visit </rich_text><rich_text link="webs http://localhost:8000">http://localhost:8000</rich_text><rich_text> on your browser.</rich_text></node><node name="Deep learning" prog_lang="custom-colors" readonly="False" tags="" unique_id="13"><rich_text></rich_text><node name="Install tenserflow" prog_lang="custom-colors" readonly="False" tags="" unique_id="14"><rich_text>1 Start  anaconda
+ 3. visit </rich_text>
+			<rich_text link="webs http://localhost:8000">http://localhost:8000</rich_text>
+			<rich_text> on your browser.</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Deep learning" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="13">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Install tenserflow" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="14">
+				<rich_text>1 Start  anaconda
 2 Create a new environment 
 3 Check All and search for  tensorflow
 4 Check tensor
@@ -12,18 +24,28 @@
 6 From Pycharm create a new project and chose the env of stage 2
 
  
-        </rich_text><rich_text link="webs https://www.youtube.com/channel/UCR1-GEpyOPzT2AO4D_eifdw">Jeff Heaton</rich_text><rich_text>    /t81-558/
+        </rich_text>
+				<rich_text link="webs https://www.youtube.com/channel/UCR1-GEpyOPzT2AO4D_eifdw">Jeff Heaton</rich_text>
+				<rich_text>    /t81-558/
       
-github   </rich_text><rich_text link="webs https://github.com/jeffheaton/t81_558_deep_learning">https://github.com/jeffheaton/t81_558_deep_learning</rich_text><rich_text>                
-youtube </rich_text><rich_text link="webs https://www.youtube.com/watch?v=59duINoc8GM">https://www.youtube.com/watch?v=59duINoc8GM</rich_text><rich_text>
+github   </rich_text>
+				<rich_text link="webs https://github.com/jeffheaton/t81_558_deep_learning">https://github.com/jeffheaton/t81_558_deep_learning</rich_text>
+				<rich_text>                
+youtube </rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=59duINoc8GM">https://www.youtube.com/watch?v=59duINoc8GM</rich_text>
+				<rich_text>
 
 
 
-install miniconda from:</rich_text><rich_text link="webs https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</rich_text><rich_text>
+install miniconda from:</rich_text>
+				<rich_text link="webs https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</rich_text>
+				<rich_text>
 
 
 1 open anaconda prompet
-2 run:     </rich_text><rich_text family="monospace">conda create -y --name tensorflow python=3.6</rich_text><rich_text>
+2 run:     </rich_text>
+				<rich_text family="monospace">conda create -y --name tensorflow python=3.6</rich_text>
+				<rich_text>
 To activate this environment, use
    $ conda activate tensorflow
  
@@ -32,25 +54,38 @@ To activate this environment, use
  if we print python --version we get :
                       Python 3.6.9 :: Anaconda, Inc.
                       
- 3  </rich_text><rich_text scale="h1">Installing Jupyter </rich_text><rich_text>
+ 3  </rich_text>
+				<rich_text scale="h1">Installing Jupyter </rich_text>
+				<rich_text>
 it is easy to install Jupyter notebooks with the following command:
-</rich_text><rich_text family="monospace">conda install -y jupyter</rich_text><rich_text>
+</rich_text>
+				<rich_text family="monospace">conda install -y jupyter</rich_text>
+				<rich_text>
 Once Jupyter is installed, it is started with the following command:
-</rich_text><rich_text family="monospace">jupyter notebook</rich_text><rich_text>                
+</rich_text>
+				<rich_text family="monospace">jupyter notebook</rich_text>
+				<rich_text>                
 
 
 
-</rich_text><rich_text link="webs https://stackoverflow.com/questions/39759623/jupyter-notebook-server-password-invalid">https://stackoverflow.com/questions/39759623/jupyter-notebook-server-password-invalid</rich_text><rich_text>
+</rich_text>
+				<rich_text link="webs https://stackoverflow.com/questions/39759623/jupyter-notebook-server-password-invalid">https://stackoverflow.com/questions/39759623/jupyter-notebook-server-password-invalid</rich_text>
+				<rich_text>
 change password:    jupyter notebook password   #lu 5
 
 install all file from the  list in url:(The list is at the end of page)
-</rich_text><rich_text link="webs https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_01_1_overview.ipynb">https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_01_1_overview.ipynb</rich_text><rich_text>
- </rich_text><rich_text family="monospace">
+</rich_text>
+				<rich_text link="webs https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_01_1_overview.ipynb">https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_01_1_overview.ipynb</rich_text>
+				<rich_text>
+ </rich_text>
+				<rich_text family="monospace">
 1 conda install -y scipy
 2  pip install --exists-action i --upgrade sklearn
 3  pip install --exists-action i --upgrade pandas
-</rich_text><rich_text> 
-4    </rich_text><rich_text family="monospace">pip install --exists-action i --upgrade pandas-datareader
+</rich_text>
+				<rich_text> 
+4    </rich_text>
+				<rich_text family="monospace">pip install --exists-action i --upgrade pandas-datareader
 5  pip install --exists-action i --upgrade matplotlib
 6  pip install --exists-action i --upgrade pillow
 7  pip install --exists-action i --upgrade tqdm
@@ -65,8 +100,11 @@ install all file from the  list in url:(The list is at the end of page)
 16 pip install --exists-action i --upgrade boto3
 17 pip install --exists-action i --upgrade gym
 18 pip install --exists-action i --upgrade tensorflow==2.0.0-beta1
-19 pip install --exists-action i --upgrade keras-rl2 --user</rich_text><rich_text>
-20 </rich_text><rich_text family="monospace">conda update -y --all</rich_text><rich_text>
+19 pip install --exists-action i --upgrade keras-rl2 --user</rich_text>
+				<rich_text>
+20 </rich_text>
+				<rich_text family="monospace">conda update -y --all</rich_text>
+				<rich_text>
 
 
 A. testing:
@@ -79,13 +117,27 @@ A. testing:
  
 
 B.  Connect  jupyter to  tensorflow:
- </rich_text><rich_text family="monospace">python -m ipykernel install --user --name tensorflow --display-name &quot;Python 3.6 (tensorflow)&quot;</rich_text></node><node name="Using Google  Colab" prog_lang="custom-colors" readonly="False" tags="" unique_id="15"><rich_text>How to  Colab:   
-</rich_text><rich_text link="webs https://www.youtube.com/watch?v=Pt-Od-oBgOM&amp;list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN&amp;index=9">https://www.youtube.com/watch?v=Pt-Od-oBgOM&amp;list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN&amp;index=9</rich_text><rich_text>
-CoLab:     </rich_text><rich_text link="webs https://colab.research.google.com/notebooks/welcome.ipynb">https://colab.research.google.com/notebooks/welcome.ipynb</rich_text><rich_text>
+ </rich_text>
+				<rich_text family="monospace">python -m ipykernel install --user --name tensorflow --display-name &quot;Python 3.6 (tensorflow)&quot;</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Using Google  Colab" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="15">
+				<rich_text>How to  Colab:   
+</rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=Pt-Od-oBgOM&amp;list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN&amp;index=9">https://www.youtube.com/watch?v=Pt-Od-oBgOM&amp;list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN&amp;index=9</rich_text>
+				<rich_text>
+CoLab:     </rich_text>
+				<rich_text link="webs https://colab.research.google.com/notebooks/welcome.ipynb">https://colab.research.google.com/notebooks/welcome.ipynb</rich_text>
+				<rich_text>
 
 file/open/github  an  enter:  jeffheaton
 or open this  url
-</rich_text><rich_text link="webs https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/">https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/</rich_text></node></node><node name="Virtual Environment" prog_lang="custom-colors" readonly="False" tags="" unique_id="16"><rich_text scale="h2" weight="heavy">Creating a virtual environment  </rich_text><rich_text>
+</rich_text>
+				<rich_text link="webs https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/">https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Virtual Environment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="16">
+			<rich_text scale="h2" weight="heavy">Creating a virtual environment  </rich_text>
+			<rich_text>
  
 1.  virtualenv scrapingEnv
 
@@ -109,7 +161,13 @@ no longer access any libraries that were installed inside the virtual environmen
 Keeping all your libraries separated by project also makes it easy to zip up the entire environment folder  
  
   you can apply a virtual environment anytime simply
-by activating it beforehand.</rich_text></node></node><node name="information" prog_lang="custom-colors" readonly="False" tags="" unique_id="11"><rich_text></rich_text><node name="file system" prog_lang="custom-colors" readonly="False" tags="" unique_id="4"><rich_text>cmd - current directory
+by activating it beforehand.</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="information" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="11">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="file system" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="4">
+			<rich_text>cmd - current directory
  cd Desktop/ - move to desktop directory
  mkdir  &lt;dir name&gt;  - create  directory
 1.   rmdir  &lt;dir name&gt;  - remove directory
@@ -131,25 +189,83 @@ by activating it beforehand.</rich_text></node></node><node name="information" p
  
 17.  sudo apt purge *impacket* :  uninstall
 18. cd /opt 
-19. sudo git  clone </rich_text><rich_text link="webs https://github.com/SecureAuthCorp/impacket.git">https://github.com/SecureAuthCorp/impacket.git</rich_text><rich_text>
+19. sudo git  clone </rich_text>
+			<rich_text link="webs https://github.com/SecureAuthCorp/impacket.git">https://github.com/SecureAuthCorp/impacket.git</rich_text>
+			<rich_text>
 
  
 
  
  
- </rich_text></node><node name="network commands" prog_lang="custom-colors" readonly="False" tags="" unique_id="3"><rich_text>ifconfig:
+ </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1582793663.88" unique_id="3">
+			<rich_text>ifconfig:
 iwconfig:
 ping:
 arp -a:
 netstat -ano:     Active Internet connections (servers and established)
 route:  Kernel IP   routing
 python  -m SimpleHTTPServer  80:  Strat a server
- </rich_text></node><node name="nmap" prog_lang="custom-colors" readonly="False" tags="" unique_id="12"><rich_text link="webs https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap">https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap</rich_text><rich_text>
+ </rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="proxychains" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582545857.04" ts_lastsave="1582793600.32" unique_id="2">
+				<rich_text link="webs https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9">https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9</rich_text>
+				<rich_text>
+
+1. nano /etc/proxychains.conf
+2. comment  random_chain   and  proxy_dns
+3. uncomment  dynamic_chain
+4.   run: service tor status
+      result :  * tor is running
+5.  service tor start
+6.  run: proxychains &lt;application name&gt; &lt;parmeters&gt;
+    Examples  proxychains  firefox </rich_text>
+				<rich_text link="webs http://www.duckduckgo.com">www.duckduckgo.com</rich_text>
+				<rich_text>  (can't run firefox as root)
+                   proxychains nmap &lt;ip&gt;
+7.  In order to test DNS leaks  in the serach window print  “test DNS leaks”
+      chose “</rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2" weight="heavy">DNS</rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2"> </rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2" weight="heavy">leak</rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2"> test</rich_text>
+				<rich_text>”
+    result     Hello 51.68.201.115  from , 
+8.  To retest: close firefox and run service tor restart   
+                    and run : proxychains  firefox </rich_text>
+				<rich_text link="webs http://www.duckduckgo.">www.duckduckgo</rich_text>
+				<rich_text>
+                   chose “</rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2" weight="heavy">DNS</rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2"> </rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2" weight="heavy">leak</rich_text>
+				<rich_text link="webs https://www.dnsleaktest.com/" scale="h2"> test</rich_text>
+				<rich_text>”
+                   and the ip is diffrent
+ In Kali  case  TOR is not fount: “e: Unable to locate Package” Error in kali linux
+ 1  nano   /etc/apt/sources.list   
+ 2. Go to the website below:
+       </rich_text>
+				<rich_text link="webs https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/">https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/</rich_text>
+				<rich_text>
+ 3. get the repositories and add in source.list file and save    
+ 4. content of  /etc/apt/sources.list :
+        deb http://http.kali.org/kali kali-rolling main non-free contrib
+       deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+ 5.  run sudo apt-get   install tor
+                  
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="nmap" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1582793605.11" unique_id="12">
+				<rich_text link="webs https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap">https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap</rich_text>
+				<rich_text>
 
 
 
  Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responsesls
-</rich_text><rich_text link="webs https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4">https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4</rich_text><rich_text>
+</rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4">https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4</rich_text>
+				<rich_text>
 
 nmap -help
 nmap -v -A scanme.nmap.org
@@ -166,11 +282,26 @@ nmap -0
 nmap -A  &lt;addr&gt;     # find os
 nmap -sV &lt;addr&gt;    #Find services
 nmap -F  www.google.com &gt; scan.txt    #Most commanly  targeted ports
-</rich_text><rich_text link="webs https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7">https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7</rich_text><rich_text>
+</rich_text>
+				<rich_text link="webs https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7">https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7</rich_text>
+				<rich_text>
 6:00
 nmap --open
 
-</rich_text></node><node name="wifi" prog_lang="custom-colors" readonly="False" tags="" unique_id="1"><rich_text link="webs https://www.youtube.com/watch?v=uFRKwWxMa8Y">https://www.youtube.com/watch?v=uFRKwWxMa8Y</rich_text><rich_text>
+zenmap  =  Grapical  interface  for  nmap
+
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Macchanger" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582793663.88" ts_lastsave="1582793675.42" unique_id="7">
+				<rich_text>macchanger  --help
+macchanger -s  etho  // Show current mac
+macchanger -a  etho // Change mac address to a random address
+macchanger -p  etho // Reset to the  original mac  address</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="1">
+			<rich_text link="webs https://www.youtube.com/watch?v=uFRKwWxMa8Y">https://www.youtube.com/watch?v=uFRKwWxMa8Y</rich_text>
+			<rich_text>
 www.aircrack-ng.org
 
 1. airmon-ng:
@@ -231,4 +362,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 
 8. airodump-ng  mon0
 
-</rich_text></node></node></cherrytree>
+</rich_text>
+		</node>
+	</node>
+</cherrytree>
