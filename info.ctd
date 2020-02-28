@@ -208,12 +208,12 @@ netstat -ano:     Active Internet connections (servers and established)
 route:  Kernel IP   routing
 python  -m SimpleHTTPServer  80:  Strat a server
  </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="proxychains" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582545857.04" ts_lastsave="1582793600.32" unique_id="2">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="proxychains" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582545857.04" ts_lastsave="1582920056.68" unique_id="2">
 				<rich_text link="webs https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9">https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9</rich_text>
 				<rich_text>
 
 1. nano /etc/proxychains.conf
-2. comment  random_chain   and  proxy_dns
+2. comment  random_chain   and  strict_chain
 3. uncomment  dynamic_chain
 4.   run: service tor status
       result :  * tor is running
