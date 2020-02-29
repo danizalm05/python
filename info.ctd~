@@ -367,7 +367,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 </rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="start monitor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582992705.84" ts_lastsave="1583003014.9" unique_id="10">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="start monitor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582992705.84" ts_lastsave="1583003168.43" unique_id="10">
 			<rich_text>
 #wifite  -showb  #show all spots
 # airmon-ng &lt;start|stop|check&gt; &lt;interface&gt; [channel or frequency]
@@ -380,10 +380,10 @@ airodump-ng  wlan0mon #  (or  mon0) list  access points
 
 besside-ng  wlan0mon 
 
-besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this  mac and this channl  </rich_text>
+besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this  mac and this channl      n</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1582988847.85" unique_id="9">
-			<rich_text>1. Code: airmon-ng stop mon0   
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1583004384.13" unique_id="9">
+			<rich_text>1. Code: airmon-ng stop wlan0mon   
   re-starting the services you killed such as DHCP 
  Code: dhclient wlan0
  
