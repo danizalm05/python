@@ -208,12 +208,12 @@ netstat -ano:     Active Internet connections (servers and established)
 route:  Kernel IP   routing
 python  -m SimpleHTTPServer  80:  Strat a server
  </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="proxychains" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582545857.04" ts_lastsave="1582793600.32" unique_id="2">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="proxychains" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582545857.04" ts_lastsave="1582920056.68" unique_id="2">
 				<rich_text link="webs https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9">https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9</rich_text>
 				<rich_text>
 
 1. nano /etc/proxychains.conf
-2. comment  random_chain   and  proxy_dns
+2. comment  random_chain   and  strict_chain
 3. uncomment  dynamic_chain
 4.   run: service tor status
       result :  * tor is running
@@ -299,9 +299,11 @@ macchanger -a  etho // Change mac address to a random address
 macchanger -p  etho // Reset to the  original mac  address</rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="1">
-			<rich_text link="webs https://www.youtube.com/watch?v=uFRKwWxMa8Y">https://www.youtube.com/watch?v=uFRKwWxMa8Y</rich_text>
-			<rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1582992705.84" unique_id="1">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="airmon" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987312.13" ts_lastsave="1582987326.91" unique_id="8">
+				<rich_text link="webs https://www.youtube.com/watch?v=uFRKwWxMa8Y">https://www.youtube.com/watch?v=uFRKwWxMa8Y</rich_text>
+				<rich_text>
 www.aircrack-ng.org
 
 1. airmon-ng:
@@ -363,6 +365,40 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 8. airodump-ng  mon0
 
 </rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="start monitor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582992705.84" ts_lastsave="1583003014.9" unique_id="10">
+			<rich_text>
+#wifite  -showb  #show all spots
+# airmon-ng &lt;start|stop|check&gt; &lt;interface&gt; [channel or frequency]
+iwconfig
+airmon-ng check  #List of  processes that could cause trouble
+airmon-ng check kill  #Kill  processes that could cause trouble
+airmon-ng start  wlan0 # Start monitoring  wlan0
+iwconfig
+airodump-ng  wlan0mon #  (or  mon0) list  access points
+
+besside-ng  wlan0mon 
+
+besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this  mac and this channl  </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1582988847.85" unique_id="9">
+			<rich_text>1. Code: airmon-ng stop mon0   
+  re-starting the services you killed such as DHCP 
+ Code: dhclient wlan0
+ 
+ 
+  
+2.
+ifconfig wlan0 down
+iwconfig wlan0 mode managed
+ifconfig wlan0 up
+
+alternatively
+
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up    </rich_text>
 		</node>
 	</node>
 </cherrytree>
