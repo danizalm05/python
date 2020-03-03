@@ -382,14 +382,14 @@ besside-ng  wlan0mon
 
 besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this  mac and this channl      n</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1583004505.45" unique_id="9">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1583005111.59" unique_id="9">
 			<rich_text>1.  airmon-ng stop wlan0mon   #
-  re-starting the services you killed such as DHCP 
+  
  
  2. service networking restart
       service network-manager restart
  
- Code: dhclient wlan0
+ 
  
  
   
