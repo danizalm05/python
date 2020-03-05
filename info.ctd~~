@@ -164,7 +164,7 @@ Keeping all your libraries separated by project also makes it easy to zip up the
 by activating it beforehand.</rich_text>
 		</node>
 	</node>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="information" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="11">
+	<node custom_icon_id="0" foreground="" is_bold="False" name="information" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1583264393.47" unique_id="11">
 		<rich_text></rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="file system" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="4">
 			<rich_text>cmd - current directory
@@ -299,7 +299,7 @@ macchanger -a  etho // Change mac address to a random address
 macchanger -p  etho // Reset to the  original mac  address</rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1582992705.84" unique_id="1">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1583264301.83" unique_id="1">
 			<rich_text></rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="airmon" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987312.13" ts_lastsave="1582987326.91" unique_id="8">
 				<rich_text link="webs https://www.youtube.com/watch?v=uFRKwWxMa8Y">https://www.youtube.com/watch?v=uFRKwWxMa8Y</rich_text>
@@ -367,6 +367,35 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 </rich_text>
 			</node>
 		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Bandit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264301.83" ts_lastsave="1583408191.43" unique_id="18">
+			<rich_text>OverTheWire: </rich_text>
+			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
+			<rich_text>
+</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583408021.06" ts_lastsave="1583409217.17" unique_id="21">
+				<rich_text link="webs https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28">https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28</rich_text>
+				<rich_text>
+
+level 0
+ssh://[user@]hostname[:port]
+1. ssh  bandit0@bandit.labs.overthewire.org  -p 2220
+    password = bandit0
+2. ls -la
+      -rw-r-----  1 bandit1 bandit0   33 Oct 16  2018 readme
+3. cat readme
+    output: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Level 1:
+The password for the next level is stored in a file called -located in the home directory
+hint: </rich_text>
+				<rich_text link="webs https://www.google.com/search?q=dashed+filename">Google Search for “dashed filename”</rich_text>
+				<rich_text>
+ssh  bandit1@bandit.labs.overthewire.org  -p 2220
+  password =boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+1.ls  -la
+  </rich_text>
+			</node>
+		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="start monitor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582992705.84" ts_lastsave="1583003168.43" unique_id="10">
 			<rich_text>
 #wifite  -showb  #show all spots
@@ -382,27 +411,45 @@ besside-ng  wlan0mon
 
 besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this  mac and this channl      n</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1583005111.59" unique_id="9">
-			<rich_text>1.  airmon-ng stop wlan0mon   #
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582987680.73" ts_lastsave="1583263855.09" unique_id="9">
+			<rich_text> 
   
- 
- 2. service networking restart
-      service network-manager restart
- 
- 
- 
- 
+ airmon-ng stop wlan1mon    
+ service networking restart
+ service network-manager restart
+ ifconfig </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583263855.09" ts_lastsave="1583264193.81" unique_id="17">
+			<rich_text> 
   
-2.
-ifconfig wlan0 down
-iwconfig wlan0 mode managed
-ifconfig wlan0 up
+ airmon-ng stop wlan1mon    
+ service networking restart
+ service network-manager restart
+ ifconfig </rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Bandit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264393.47" ts_lastsave="1583264533.72" unique_id="19">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name=" Level 0 - 6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264533.72" ts_lastsave="1583265860.27" unique_id="20">
+			<rich_text link="webs https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28">https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28</rich_text>
+			<rich_text>
+ 
+</rich_text>
+			<rich_text underline="single">level 0</rich_text>
+			<rich_text>
+1. ssh bandit0@bandit.labs.overthewire.org -p 2220
+     password= bandit
+2. ls -lapsp
+3. cat readme
+     boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+4. exit
+    logout
 
-alternatively
-
-ifconfig wlan0 down
-iwconfig wlan0 mode monitor
-ifconfig wlan0 up    </rich_text>
+</rich_text>
+			<rich_text underline="single">level </rich_text>
+			<rich_text>1
+1 sh bandit1@bandit.labs.overthewire.org -p 2220
+    password = J9jbbUNNfktd78OOpsqOltutMc3MY1</rich_text>
 		</node>
 	</node>
 </cherrytree>

@@ -367,8 +367,58 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 </rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Bandit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264301.83" ts_lastsave="1583264301.83" unique_id="18">
-			<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Bandit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264301.83" ts_lastsave="1583408191.43" unique_id="18">
+			<rich_text>OverTheWire: </rich_text>
+			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
+			<rich_text>
+</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583408021.06" ts_lastsave="1583409635.9" unique_id="21">
+				<rich_text link="webs https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28">https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28</rich_text>
+				<rich_text>
+
+level 0
+ssh://[user@]hostname[:port]
+1. ssh  bandit0@bandit.labs.overthewire.org  -p 2220
+    password = bandit0
+2. ls -la
+      -rw-r-----  1 bandit1 bandit0   33 Oct 16  2018 readme
+3. cat readme
+    output: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Level 1:
+The password for the next level is stored in a file called - 
+located in the home directory
+
+ssh  bandit1@bandit.labs.overthewire.org  -p 2220
+  password =boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+1. ls  -la
+ output:   -rw-r-----  1 bandit2 bandit1   33 Oct 16  2018 -
+
+hint: </rich_text>
+				<rich_text link="webs https://www.google.com/search?q=dashed+filename">Google Search for “dashed filename”</rich_text>
+				<rich_text>
+2. cat ./-
+  
+ output:  CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+Level 3
+
+Goal:
+The password for the next level is stored in a file called spaces in this filename located in the home directory
+Hint :
+ </rich_text>
+				<rich_text link="webs https://www.google.com/search?q=spaces+in+filename">Google Search for “spaces in filename”</rich_text>
+				<rich_text>
+
+ssh  bandit2@bandit.labs.overthewire.org  -p 2220
+ password= CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+
+
+
+  </rich_text>
+			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="start monitor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582992705.84" ts_lastsave="1583003168.43" unique_id="10">
 			<rich_text>
