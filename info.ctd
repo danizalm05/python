@@ -199,7 +199,7 @@ by activating it beforehand.</rich_text>
  
  </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1582793663.88" unique_id="3">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1583503097.38" unique_id="3">
 			<rich_text>ifconfig:
 iwconfig:
 ping:
@@ -298,6 +298,9 @@ macchanger -s  etho  // Show current mac
 macchanger -a  etho // Change mac address to a random address
 macchanger -p  etho // Reset to the  original mac  address</rich_text>
 			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="wget" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583503097.38" ts_lastsave="1583503100.67" unique_id="17">
+				<rich_text>wget  -mk &lt;url&gt;: Clone a website to  local machine</rich_text>
+			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1583264301.83" unique_id="1">
 			<rich_text></rich_text>
@@ -372,11 +375,13 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583408021.06" ts_lastsave="1583409635.9" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583408021.06" ts_lastsave="1583860969.83" unique_id="21">
 				<rich_text link="webs https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28">https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28</rich_text>
 				<rich_text>
 
-level 0
+</rich_text>
+				<rich_text underline="single">level 0</rich_text>
+				<rich_text>
 ssh://[user@]hostname[:port]
 1. ssh  bandit0@bandit.labs.overthewire.org  -p 2220
     password = bandit0
@@ -385,8 +390,10 @@ ssh://[user@]hostname[:port]
 3. cat readme
     output: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-Level 1:
-The password for the next level is stored in a file called - 
+</rich_text>
+				<rich_text underline="single">Level 1:</rich_text>
+				<rich_text>
+The password for the next level is stored in a file called ‘- ’
 located in the home directory
 
 ssh  bandit1@bandit.labs.overthewire.org  -p 2220
@@ -402,10 +409,10 @@ hint: </rich_text>
   
  output:  CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
-Level 3
-
-Goal:
-The password for the next level is stored in a file called spaces in this filename located in the home directory
+</rich_text>
+				<rich_text underline="single">Level </rich_text>
+				<rich_text>2
+Goal:The password for the next level is stored in a file called spaces in this filename located in the home directory
 Hint :
  </rich_text>
 				<rich_text link="webs https://www.google.com/search?q=spaces+in+filename">Google Search for “spaces in filename”</rich_text>
@@ -413,11 +420,77 @@ Hint :
 
 ssh  bandit2@bandit.labs.overthewire.org  -p 2220
  password= CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+1.  cat &quot;spaces in this filename&quot;
+output:  UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
+</rich_text>
+				<rich_text underline="single">Level </rich_text>
+				<rich_text>3
+ Goal: The password for the next level is stored in a hidden file in theinhere directory.
+ 
+ ssh  bandit3@bandit.labs.overthewire.org  -p 2220
+ password = UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+ 1. cd inhere
+ 2. la -la 
+ output: .hidden
+ 3 cat .inhere
+  output:pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+  
+  
+ Level 4
+ Goal:  The password for the next level is stored in the only human-readablefile in the inhere directory. 
+ Tip: if your terminal is messedup, try the “reset” command. 
+ 
+ ssh  bandit4@bandit.labs.overthewire.org  -p 2220
+ password =  pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+ 
+ </rich_text>
+				<rich_text underline="single">Level 4</rich_text>
+				<rich_text>
+Goal: The password for the next level is stored in the only human-readablefile in the inhere directory. 
+Tip: if your terminal is messedup, try the “reset” command. 
 
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+password = pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 
+1. bandit4@bandit:~/inhere$ ls -la  
+2. ls 
+   output: -file00 -file01 -file02 -file03 -file04 -file05 -file06 -file07 -file08 -file09
 
-  </rich_text>
+3. file ./* 
+   output/./-file00: data  ...      ./-file07: ASCII text  /-file09: data 
+
+4. cat ./-file07
+    out put : koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+ 
+</rich_text>
+				<rich_text underline="single">Level </rich_text>
+				<rich_text>5
+Goal:  The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+  • human-readable
+  • 1033 bytes in size
+  • not executable
+
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+password = koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+1. find ./ -size 1033c ! -executable
+2. cat ./maybehere07/.file2
+output = DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+</rich_text>
+				<rich_text underline="single">Level 6</rich_text>
+				<rich_text>
+Goal: The password for the next level is stored somewhere on the server and has all of the following properties:
+
+    owned by user bandit7
+    owned by group bandit6
+    33 bytes in size
+ 
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+password = DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+ 
+ 
+ </rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="start monitor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1582992705.84" ts_lastsave="1583003168.43" unique_id="10">
@@ -442,38 +515,6 @@ besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this 
  service networking restart
  service network-manager restart
  ifconfig </rich_text>
-		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Stop monitor mode" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583263855.09" ts_lastsave="1583264193.81" unique_id="17">
-			<rich_text> 
-  
- airmon-ng stop wlan1mon    
- service networking restart
- service network-manager restart
- ifconfig </rich_text>
-		</node>
-	</node>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="Bandit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264393.47" ts_lastsave="1583264533.72" unique_id="19">
-		<rich_text></rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name=" Level 0 - 6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583264533.72" ts_lastsave="1583265860.27" unique_id="20">
-			<rich_text link="webs https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28">https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28</rich_text>
-			<rich_text>
- 
-</rich_text>
-			<rich_text underline="single">level 0</rich_text>
-			<rich_text>
-1. ssh bandit0@bandit.labs.overthewire.org -p 2220
-     password= bandit
-2. ls -lapsp
-3. cat readme
-     boJ9jbbUNNfktd78OOpsqOltutMc3MY1
-4. exit
-    logout
-
-</rich_text>
-			<rich_text underline="single">level </rich_text>
-			<rich_text>1
-1 sh bandit1@bandit.labs.overthewire.org -p 2220
-    password = J9jbbUNNfktd78OOpsqOltutMc3MY1</rich_text>
 		</node>
 	</node>
 </cherrytree>
