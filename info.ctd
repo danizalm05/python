@@ -375,7 +375,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583408021.06" ts_lastsave="1583932437.44" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1583408021.06" ts_lastsave="1584276859.77" unique_id="21">
 				<rich_text link="webs https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28">https://www.youtube.com/watch?v=ff2Au8BIy_A&amp;list=PLBf0hzazHTGNZatM4Ax-LPA2UThcK3Q9Z&amp;index=28</rich_text>
 				<rich_text>
 
@@ -404,12 +404,14 @@ find / -type f -user bandit7 -group bandit6 -size 33c :   find a file tored some
 				<rich_text underline="single" weight="heavy">grep</rich_text>
 				<rich_text> &quot;millionth&quot;  data.txt:  find the line in file data.txt next to the word millionth
  
+ 
+sort data.txt | uniq -c  : line of text that occurs only once 
 
-Bandit Level 8 
-Level Goal:The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
-
-ssh bandit8@bandit.labs.overthewire.org -p 2220
-password = cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+</rich_text>
+				<rich_text underline="single" weight="heavy">strings:</rich_text>
+				<rich_text>  print the strings of printable characters in files.
+strings data.txt | grep '^=' : Find strings beginning with several ‘=’ characters.
+ 
  
  </rich_text>
 			</node>
