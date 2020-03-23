@@ -457,11 +457,9 @@ besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this 
  ifconfig </rich_text>
 		</node>
 	</node>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="w" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1584431509.38" ts_lastsave="1584431521.89" unique_id="19">
-		<rich_text></rich_text>
-	</node>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="cmd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1584431613.66" ts_lastsave="1584467117.17" unique_id="20">
-		<rich_text>arp -av :Displays and modifies the IP-to-Physical address translation tables used by
+	<node custom_icon_id="0" foreground="" is_bold="False" name="cmd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1584431613.66" ts_lastsave="1584966037.74" unique_id="20">
+		<rich_text underline="single" weight="heavy">arp -av</rich_text>
+		<rich_text> :Displays and modifies the IP-to-Physical address translation tables used by
 address resolution protocol(arp).
 ipconfig /all: chack your  ip
 netsh wlan show profile: List all wifi  conected
@@ -471,79 +469,24 @@ tracert  </rich_text>
 nslookup
 nbtstat
 routh
-systeminfo: Show info of the  system
-tree: graphical representation of all  files
-netsh wlan export  profile folder=c:\  key=clear : All paswords are in folder c:
-color  help
-color Sets the default console foreground and background colors.
+</rich_text>
+		<rich_text underline="single" weight="heavy">systeminfo</rich_text>
+		<rich_text>: Show info of the  system
+</rich_text>
+		<rich_text underline="single" weight="heavy">tree</rich_text>
+		<rich_text>: graphical representation of all  files
+</rich_text>
+		<rich_text underline="single" weight="heavy">netsh wlan export  profile folder=c:\  key=clear</rich_text>
+		<rich_text> : All paswords are in folder c:
+ 
+</rich_text>
+		<rich_text underline="single" weight="heavy">color</rich_text>
+		<rich_text> Sets the default console foreground and background colors.
 color  1e: background black font=yellow
 
 </rich_text>
 		<rich_text underline="single" weight="heavy">wmic product get name</rich_text>
 		<rich_text>: List all  programs  installed
-Name
-Data for Getting to Know ArcGIS Desktop, 5th edition
-PTP
-Device Setup
-Update for Windows 10 for x64-based Systems (KB4023057)
-Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
-Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
-ViewNX 2
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
-Microsoft Visual C++ 2017 x86 Additional Runtime - 14.10.25017
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
-Node.js
-ArtRage 5
-Microsoft VC++ redistributables repacked.
-Microsoft HEVC Media Extension Installation for Microsoft.HEVCVideoExtension_1.0.2512.0_x64__8wekyb3d8bbwe (x64)
-Nikon Movie Editor
-Python 2.7.15
-LibreOffice 6.0.2.1
-ASUS Splendid Video Enhancement Technology
-Intel(R) PRO/Wireless Driver
-Intel(R) Trusted Connect Service Client x86
-Intel(R) Trusted Connect Service Client x64
-Intel(R) ME UninstallLegacy
-ArcGIS License Manager 10.6
-ASUS USB Charger Plus
-Intel(R) Serial IO
-Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005
-Java(TM) SE Development Kit 10.0.2 (64-bit)
-Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
-ArcGIS Desktop 10.6
-Adobe Refresh Manager
-Adobe Acrobat Reader DC
-Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
-Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005
-Picture Control Utility 2
-ASUS Live Update
-Microsoft Visual C++ 2017 x64 Additional Runtime - 14.12.25810
-Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
-Intel(R) Management Engine Components
-Intel(R) Chipset Device Software
-Microsoft Visual C++ 2017 x86 Minimum Runtime - 14.10.25017
-Intelr PROSet/Wireless WiFi Software
-ASUS PTP Driver
-Microsoft VC++ redistributables repacked.
-XSplit Gamecaster
-7-Zip 19.00 (x64 edition)
-Google Update Helper
-ROG Gaming Center Core
-Intel(R) Management Engine Components
-Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030
-Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
-Oracle VM VirtualBox 6.0.16
-Microsoft Visual C++ 2017 x64 Minimum Runtime - 14.12.25810
-Intel(R) Rapid Storage Technology
-Microsoft SQL Server Compact 3.5 SP2 ENU
-Microsoft SQL Server Compact 3.5 SP2 x64 ENU
-Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030
-GameFirst IV
-WinFlash
-ATK Package (ASUS Keyboard Hotkeys)
-Google Earth Pro
-Intelr Hardware Accelerated Execution Manager
-Epic Games Launcher Prerequisites (x64)
-ROG Gaming Center</rich_text>
+</rich_text>
 	</node>
 </cherrytree>
