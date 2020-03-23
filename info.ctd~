@@ -375,7 +375,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1584979058.34" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1584977973.41" unique_id="21">
 				<rich_text> 
 
  
@@ -455,7 +455,7 @@ sort data.txt | uniq -c  : line of text that occurs only once
  
 </rich_text>
 				<rich_text family="monospace" underline="single" weight="heavy">xxd</rich_text>
-				<rich_text family="monospace"> creates  a hex dump of a file</rich_text>
+				<rich_text family="monospace">  creates  a hex dump of a file</rich_text>
 				<rich_text> 
 </rich_text>
 				<rich_text family="monospace">xxd test.txt</rich_text>
