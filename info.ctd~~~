@@ -375,7 +375,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585238519.18" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585237353.31" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -387,7 +387,7 @@ ssh  bandit0@bandit.labs.overthewire.org  -p 2220
 ssh -i sshkey.private bandit14@localhost :  Selects a file from which the identity (private key) for public key  read. 
 
 
-   
+
 
 
 
