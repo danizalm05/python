@@ -38,7 +38,7 @@ bsObj = BeautifulSoup(html, "lxml")
 nameList = bsObj.findAll("span", {"class": "green"})
 for name in nameList:
     print(name.get_text())
-#page 21 web scraping with  python
+#page 15 web scraping with  python
 
 u4 = "http://www.pythonscraping.com/pages/page3.html"
 html = urlopen(u4)

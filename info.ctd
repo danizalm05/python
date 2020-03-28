@@ -1,6 +1,43 @@
 <?xml version="1.0" ?>
 <cherrytree>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="6">
+	<node custom_icon_id="0" foreground="" is_bold="False" name="regular expression" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1585396297.43" ts_lastsave="1585398047.83" unique_id="19">
+		<rich_text>1  * :   Matches the preceding character 0 or more times.
+Example a*b*       Example matches: aaaaaaaa, aaabbbbb
+
+2. +:   Matches the preceding character 1 or more times.
+Example a+b+      Example matches: aaaaaaaab, aaabbbbb, abbbbbb
+
+3. []:  Matches any character within the brackets ( 
+Example [A-Z]*   Example matches: APPLE, CAPITALS, WERTY
+
+4. (): A grouped subexpression (these are evaluated first, in the “order of perations” of regular expressions).
+Example: (a*b)*        Example matches: aaabaab, abaaab, babaaaaab
+
+5. {m, n}:Matches the preceding character, subexpression, or bracketed character between m and n times (inclusive).
+Example:  a{2,3}b{2,3}          Example matches: aabbb, aaabbb, abb
+
+6. [^]:  Matches any single character that is not in the brackets.  
+Example[^A-Z]*     Example matches: apple, lowercase, qwerty
+
+7. | Matches any character, string of characters, or subexpression, separated by the I  
+Example b(a|i|e)d       Example matches:bad, bid, bed
+
+8.  . :Matches any single character (including symbols, numbers, a space, etc.). 
+    Example b.d     Example matches: bad, bzd, b$d, b d
+ 
+9 . ^ : Indicates that a character or subexpression occurs at the beginning of a string.
+Example ^a    Example matches:  apple, asdf, a
+
+10. \ : An escape character (this allows you to use special characters as their iteral meanings).
+E xample \. \| \\          Example matches: . | \
+
+11. $: Often used at the end of a regular expression, it means “match this up to
+the end of the string.” Without it, every regular expression has a de facto
+“.*” at the end of it, accepting strings where only the first part of the
+string matches. This can be thought of as analogous to the ^ symbol.
+Example [A-Z]*[a-z]*$  Example matches: ABCabc, zzzyx, ob egular</rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585396297.43" unique_id="6">
 		<rich_text></rich_text>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Python Server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="5">
 			<rich_text> python HTTPServer
@@ -375,7 +412,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="0-6" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585238519.18" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585396248.62" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
