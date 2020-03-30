@@ -412,7 +412,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585396248.62" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585557987.83" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -487,7 +487,15 @@ mkdir /tmp/yourname
 				<rich_text> or </rich_text>
 				<rich_text link="webs https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</rich_text>
 				<rich_text>
-    cat /etc/bandit_pass/bandit14 | nc localhost 30000:Ooen port 3000  with passward in file
+    cat /etc/bandit_pass/bandit14 | nc localhost 30000:  Ooen port 3000  with passward in file ‘bandit14’
+
+</rich_text>
+				<rich_text underline="single" weight="heavy">openss</rich_text>
+				<rich_text>: Cryptography toolkit implementing the Secure Sockets Layer network connections 
+ echo &lt;password&gt;| openssl s_client -quiet -connect &lt;host&gt;:&lt;port num&gt;:Open port with password
+
+
+
 
 </rich_text>
 				<rich_text underline="single" weight="heavy">sort</rich_text>
