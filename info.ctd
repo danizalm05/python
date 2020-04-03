@@ -412,18 +412,18 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585557987.83" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585916132.12" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
 				<rich_text> (</rich_text>
 				<rich_text link="webs https://www.ssh.com/ssh/protocol">Secure Shell</rich_text>
 				<rich_text>):  secure remote login from one computer to another. 
-ssh://[user@]hostname[:port]
+ssh://[user@]hostname -p [:port number]
 ssh  bandit0@bandit.labs.overthewire.org  -p 2220
 ssh -i sshkey.private bandit14@localhost :  Selects a file from which the identity (private key) for public key  read. 
-
-
+ssh -p 2220 bandit18@bandit.labs.overthewire.org ls: login and run ‘ls’ command
+ssh -p 2220 bandit18@bandit.labs.overthewire.org cat &lt;file&gt;: login and run ‘cat’ command
    
 
 
@@ -445,10 +445,16 @@ base64 -d &lt;file name&gt; : decodes base64 encoded file
  cat &quot;spaces in this filename&quot;:  output a file called “spaces in this filename” 
  cat .inhere :output  a hidden file name “nihere”
  cat /etc/bandit_pass/bandit14:  Output   passward 
+ 
 </rich_text>
 				<rich_text underline="single" weight="heavy">cp</rich_text>
 				<rich_text>
  cp data.txt /tmp/yourname
+ 
+</rich_text>
+				<rich_text underline="single" weight="heavy">diff </rich_text>
+				<rich_text>
+diff &lt;file 1&gt; &lt;file 2&gt;:   compare files line by line
 
 </rich_text>
 				<rich_text underline="single" weight="heavy">file</rich_text>
@@ -460,9 +466,7 @@ base64 -d &lt;file name&gt; : decodes base64 encoded file
 				<rich_text>
  find ./ -size 1033c ! -executable:    find a file somewhere under the inhere directory and has  all  of the   following  properties:  
      human-readable   • 1033 bytes in size  • not executable
-find / -type f -user bandit7 -group bandit6 -size </rich_text>
-				<rich_text family="monospace" scale="sup">33c</rich_text>
-				<rich_text> :   find a file tored somewhere on the server and has all of the following properties:
+find / -type f -user bandit7 -group bandit6 -size 33 :   find a file tored somewhere on the server and has all of the following properties:
     owned by user bandit7   owned by group bandit6  33 bytes in size
   
 </rich_text>
@@ -488,10 +492,16 @@ mkdir /tmp/yourname
 				<rich_text link="webs https://en.wikipedia.org/wiki/User_Datagram_Protocol">UDP</rich_text>
 				<rich_text>
     cat /etc/bandit_pass/bandit14 | nc localhost 30000:  Ooen port 3000  with passward in file ‘bandit14’
+    
 
 </rich_text>
-				<rich_text underline="single" weight="heavy">openss</rich_text>
-				<rich_text>: Cryptography toolkit implementing the Secure Sockets Layer network connections 
+				<rich_text underline="single" weight="heavy">nmap</rich_text>
+				<rich_text>: Ports  scanners
+nmap -sT localhost -p31000-32000:  scan localhost and ports from 31000 to 32000    
+
+</rich_text>
+				<rich_text underline="single" weight="heavy">openssl:</rich_text>
+				<rich_text> Cryptography secure Sockets Layer network connections 
  echo &lt;password&gt;| openssl s_client -quiet -connect &lt;host&gt;:&lt;port num&gt;:Open port with password
 
 
@@ -516,6 +526,12 @@ sort data.txt | uniq -c  : line of text that occurs only once
 				<rich_text underline="single" weight="heavy">telnet</rich_text>
 				<rich_text>
  telnet localhost 30000
+ 
+</rich_text>
+				<rich_text underline="single" weight="heavy">touch</rich_text>
+				<rich_text>: 
+ touch &lt;file1&gt; &lt;file2&gt;  &lt;file3&gt; ... :  create  one or more files
+ touch -a  &lt;file&gt;: Update the last access and modification times of a file.
 
 </rich_text>
 				<rich_text underline="single" weight="heavy">tr</rich_text>
@@ -524,15 +540,15 @@ sort data.txt | uniq -c  : line of text that occurs only once
  cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' :translate A to N B to M C to O ....
  echo &quot;Welcome To GeeksforGeeks&quot; | tr [:space:] '\t': translate all the white-space to tabs
  
- 
 </rich_text>
-				<rich_text family="monospace" underline="single" weight="heavy">xxd</rich_text>
-				<rich_text family="monospace"> creates  a hex dump of a file</rich_text>
-				<rich_text> 
+				<rich_text underline="single" weight="heavy">xxd</rich_text>
+				<rich_text>: creates a hex dump of a  file 
+ xxd test.txt: Output hexdump to the console
+ xxd -r data.txt data.out: Reverse from hex dump  to  original 
+
 </rich_text>
-				<rich_text family="monospace">xxd test.txt</rich_text>
-				<rich_text>: Output  hexdump to  console
-xxd -r data.txt data.out: Reverse from hex dump  to  original 
+				<rich_text underline="single" weight="heavy">vim</rich_text>
+				<rich_text>: editor
 
  
  </rich_text>
