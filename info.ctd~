@@ -412,7 +412,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586452951.36" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585916132.12" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -464,7 +464,6 @@ diff &lt;file 1&gt; &lt;file 2&gt;:   compare files line by line
 </rich_text>
 				<rich_text underline="single" weight="heavy">find</rich_text>
 				<rich_text>
- find / -user bandit20:   find all  file  owned  by user = bandit20
  find ./ -size 1033c ! -executable:    find a file somewhere under the inhere directory and has  all  of the   following  properties:  
      human-readable   • 1033 bytes in size  • not executable
 find / -type f -user bandit7 -group bandit6 -size 33 :   find a file tored somewhere on the server and has all of the following properties:
