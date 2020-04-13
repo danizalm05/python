@@ -236,7 +236,7 @@ by activating it beforehand.</rich_text>
  
  </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="3">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586766325.51" unique_id="3">
 			<rich_text>ifconfig:
 iwconfig:
 ping:
@@ -293,7 +293,7 @@ python  -m SimpleHTTPServer  80:  Strat a server
                   
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="nmap" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="12">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="nmap" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586625900.71" unique_id="12">
 				<rich_text link="webs https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap">https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap</rich_text>
 				<rich_text>
 
@@ -306,13 +306,14 @@ python  -m SimpleHTTPServer  80:  Strat a server
 
 nmap -help
 nmap -v -A scanme.nmap.org
+nmap -T4 -A -v &lt;ip&gt;:  Intense  scan
 nslookup  : ip
 
 ifconfig   etho : inet  10.0.2.15
 scan and output  results  to  a file named res
 nmap -oG - 10.0.2.0-255 -vv &gt;  res 
-scan for  port  22  and output  results  to  a file named res
-nmap -oG - 10.0.2.0-255 -p 22 -vv &gt;  res 
+
+nmap -oG - 10.0.2.0-255 -p 22 -vv &gt;  res :   scan for  port  22  and output  results  to  a file named res
 
 nmap --help 
 nmap -0  
@@ -335,8 +336,13 @@ macchanger -s  etho  // Show current mac
 macchanger -a  etho // Change mac address to a random address
 macchanger -p  etho // Reset to the  original mac  address</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="wget" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="17">
-				<rich_text>wget  -mk &lt;url&gt;: Clone a website to  local machine</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Armitage metsploit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586766325.51" ts_lastsave="1586766357.39" unique_id="17">
+				<rich_text> 
+  apt-get install armitage
+ 
+etc/init.d/postgresql  start
+ Program is located in /usr/bin/armitage
+</rich_text>
 			</node>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="wifi" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="1">
@@ -412,7 +418,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586452951.36" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586766133.57" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -530,7 +536,7 @@ sort data.txt | uniq -c  : line of text that occurs only once
  
 </rich_text>
 				<rich_text underline="single" weight="heavy">touch</rich_text>
-				<rich_text>: 
+				<rich_text> 
  touch &lt;file1&gt; &lt;file2&gt;  &lt;file3&gt; ... :  create  one or more files
  touch -a  &lt;file&gt;: Update the last access and modification times of a file.
 
@@ -540,6 +546,11 @@ sort data.txt | uniq -c  : line of text that occurs only once
  cat greekfile | tr “[a-z]” “[A-Z]”: Translate lower to capital  letter
  cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' :translate A to N B to M C to O ....
  echo &quot;Welcome To GeeksforGeeks&quot; | tr [:space:] '\t': translate all the white-space to tabs
+ 
+</rich_text>
+				<rich_text underline="single" weight="heavy">wget</rich_text>
+				<rich_text>
+ wget  -mk &lt;url&gt;: Clone a website to  local machine 
  
 </rich_text>
 				<rich_text underline="single" weight="heavy">xxd</rich_text>
