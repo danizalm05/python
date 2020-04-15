@@ -293,7 +293,7 @@ python  -m SimpleHTTPServer  80:  Strat a server
                   
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Net commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586972296.69" unique_id="12">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Net commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586948402.76" unique_id="12">
 				<rich_text>
 
 </rich_text>
@@ -312,12 +312,6 @@ python  -m SimpleHTTPServer  80:  Strat a server
 				<rich_text>:  find internal/local IP addresses
  netdiscover:  -i eth0: Find devices connect to ‘eth0’
  netdiscover:  -i eth0 -r 192.168.1.1/24: Find devices connect to ‘eth0’ subnet
-
-lscript:  
-   To start   run  /bin/lscript/l
-
-
-
 
 </rich_text>
 				<rich_text underline="single" weight="heavy">zenmap</rich_text>

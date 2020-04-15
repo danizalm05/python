@@ -293,7 +293,7 @@ python  -m SimpleHTTPServer  80:  Strat a server
                   
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Net commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586972296.69" unique_id="12">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Net commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586948402.76" unique_id="12">
 				<rich_text>
 
 </rich_text>
@@ -312,12 +312,6 @@ python  -m SimpleHTTPServer  80:  Strat a server
 				<rich_text>:  find internal/local IP addresses
  netdiscover:  -i eth0: Find devices connect to ‘eth0’
  netdiscover:  -i eth0 -r 192.168.1.1/24: Find devices connect to ‘eth0’ subnet
-
-lscript:  
-   To start   run  /bin/lscript/l
-
-
-
 
 </rich_text>
 				<rich_text underline="single" weight="heavy">zenmap</rich_text>
@@ -412,7 +406,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586971110.96" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586766133.57" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -464,7 +458,6 @@ diff &lt;file 1&gt; &lt;file 2&gt;:   compare files line by line
 </rich_text>
 				<rich_text underline="single" weight="heavy">find</rich_text>
 				<rich_text>
- find -name &quot;filename&quot;: Find file by its file name
  find / -user bandit20:   find all  file  owned  by user = bandit20
  find ./ -size 1033c ! -executable:    find a file somewhere under the inhere directory and has  all  of the   following  properties:  
      human-readable   • 1033 bytes in size  • not executable
