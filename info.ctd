@@ -293,40 +293,29 @@ python  -m SimpleHTTPServer  80:  Strat a server
                   
 </rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="nmap" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586625900.71" unique_id="12">
-				<rich_text link="webs https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap">https://shushan.co.il/%D7%90%D7%99%D7%A1%D7%95%D7%A3-%D7%9E%D7%99%D7%93%D7%A2-%D7%A2%D7%9C-%D7%99%D7%93%D7%99-nmap</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Net commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586948402.76" unique_id="12">
 				<rich_text>
 
-
-
- Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responsesls
 </rich_text>
-				<rich_text link="webs https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4">https://www.youtube.com/watch?v=5MTZdN9TEO4&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=4</rich_text>
-				<rich_text>
-
-nmap -help
-nmap -v -A scanme.nmap.org
-nmap -T4 -A -v &lt;ip&gt;:  Intense  scan
-nslookup  : ip
-
-ifconfig   etho : inet  10.0.2.15
-scan and output  results  to  a file named res
-nmap -oG - 10.0.2.0-255 -vv &gt;  res 
-
-nmap -oG - 10.0.2.0-255 -p 22 -vv &gt;  res :   scan for  port  22  and output  results  to  a file named res
-
-nmap --help 
-nmap -0  
-nmap -A  &lt;addr&gt;     # find os
-nmap -sV &lt;addr&gt;    #Find services
-nmap -F  www.google.com &gt; scan.txt    #Most commanly  targeted ports
+				<rich_text underline="single" weight="heavy">nmap</rich_text>
+				<rich_text>: discover hosts and services on a computer network by sending packets and analyzing the responsesls
+ nmap -v -A scanme.nmap.org
+ nmap -T4 -A -v &lt;ip&gt;:  Intense  scan
+ nmap -oG - 10.0.2.0-255 -vv &gt;  res  :scan and output  results  to  a file named res
+ nmap -oG - 10.0.2.0-255 -p 22 -vv &gt;  res :   scan for  port  22  and output  results  to  a file named res
+ nmap -A  &lt;addr&gt;     # find os
+ nmap -sV &lt;addr&gt;    #Find services
+ nmap -F  www.google.com &gt; scan.txt    #Most commanly  targeted ports
+ 
 </rich_text>
-				<rich_text link="webs https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7">https://www.youtube.com/watch?v=OUQkCAHdX_g&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=7</rich_text>
-				<rich_text>
-6:00
-nmap --open
+				<rich_text underline="single" weight="heavy">netdiscover</rich_text>
+				<rich_text>:  find internal/local IP addresses
+ netdiscover:  -i eth0: Find devices connect to ‘eth0’
+ netdiscover:  -i eth0 -r 192.168.1.1/24: Find devices connect to ‘eth0’ subnet
 
-zenmap  =  Grapical  interface  for  nmap
+</rich_text>
+				<rich_text underline="single" weight="heavy">zenmap</rich_text>
+				<rich_text>:    Grapical  interface  for  nmap
 
 </rich_text>
 			</node>
