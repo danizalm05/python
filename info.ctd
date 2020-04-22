@@ -331,11 +331,101 @@ macchanger -s  etho  // Show current mac
 macchanger -a  etho // Change mac address to a random address
 macchanger -p  etho // Reset to the  original mac  address</rich_text>
 			</node>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Armitage metsploit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586766325.51" ts_lastsave="1586796571.88" unique_id="17">
-				<rich_text>  apt-get update
-  apt-get install armitage
-   /etc/init.d/postgresql  start
- Program is located in /usr/bin/armitage
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Armitage metsploit" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1586766325.51" ts_lastsave="1587573503.9" unique_id="17">
+				<rich_text>Metasploit  modules;
+   (1) exploits    (2) payloads  (3) auxiliary  (4) nops 
+   (5) post       (6) encoders   (7) evasion  
+
+options (variables).
+  RHOST - this is the remote host or target IP
+  LHOST - this is the local host or attacker IP
+  RPORT - this is the remote port or target port
+  LPORT - this is the local port or attacker port
+     
+metasploit-framework package and is installed in the /usr/share/metasploit-framework 
+use auxiliary/scanner/portscan/tcp
+show  options
+
+set RHOSTS  192.168.1.100
+set PORTS 1-1000
+run
+
+
+Getting Started
+
+kali &gt; service postgresql start
+kali &gt;msfconsole
+
+
+msf &gt; use exploit/windows/browser/adobe_flash_avm2 :Loads a module
+msf &gt; show payloads: list all the payloads that are compatible with this exploit
+msf &gt; show options: options that need to set before running the module
+msf &gt; show targets  
+
+msf &gt; info: info of  exploit
+
+msf &gt; search
+msf &gt; search type:exploit platform:windows flash:  exploit (type) for Windows (platform) for Abobe Flash
+msf &gt; set SRVPORT 80: default SVRPORT (server port) from 8080 to 80
+msf &gt; unset SRVPORT: unsets the option
+
+msf &gt; exploit: sends the exploit to the target system and, if successful, installs the payload
+
+msf &gt; back: take us &quot;back&quot; one step in our process
+msf &gt; exit
+
+Metasploit  modules;
+   (1) exploits
+   (2) payloads
+   (3) auxiliary
+   (4) nops 
+   (5) post
+   (6) encoders
+   (7) evasion (new in Metasploit 5)
+
+options (variables).
+
+
+  RHOST - this is the remote host or target IP
+  LHOST - this is the local host or attacker IP
+  RPORT - this is the remote port or target port
+  LPORT - this is the local port or attacker port
+     
+metasploit-framework package and is installed in the /usr/share/metasploit-framework 
+use auxiliary/scanner/portscan/tcp
+show  options
+
+set RHOSTS  192.168.1.100
+set PORTS 1-1000
+run
+
+
+Getting Started
+
+kali &gt; service postgresql start
+kali &gt;msfconsole
+
+
+msf &gt; use exploit/windows/browser/adobe_flash_avm2 :Loads a module
+msf &gt; show payloads: list all the payloads that are compatible with this exploit
+msf &gt; show options: options that need to set before running the module
+msf &gt; show targets  
+
+msf &gt; info: info of  exploit
+
+msf &gt; search
+msf &gt; search type:exploit platform:windows flash:  exploit (type) for Windows (platform) for Abobe Flash
+msf &gt; set SRVPORT 80: default SVRPORT (server port) from 8080 to 80
+msf &gt; unset SRVPORT: unsets the option
+
+msf &gt; exploit: sends the exploit to the target system and, if successful, installs the payload
+
+msf &gt; back: take us &quot;back&quot; one step in our process
+msf &gt; exit
+
+</rich_text>
+				<rich_text link="webs https://www.hackers-arise.com/post/2017/01/30/metasploit-part-2-metasploit-module-types">https://www.hackers-arise.com/post/2017/01/30/metasploit-part-2-metasploit-module-types</rich_text>
+				<rich_text>
 </rich_text>
 			</node>
 		</node>
