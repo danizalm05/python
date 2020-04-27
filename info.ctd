@@ -236,7 +236,7 @@ by activating it beforehand.</rich_text>
  
  </rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586766325.51" unique_id="3">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="network commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1587918362.24" unique_id="3">
 			<rich_text>ifconfig:
 iwconfig:
 ping:
@@ -244,7 +244,7 @@ arp -a:
 netstat -ano:     Active Internet connections (servers and established)
 route:  Kernel IP   routing
 python  -m SimpleHTTPServer  80:  Strat a server
- </rich_text>
+ip addr : Show private ip </rich_text>
 			<node custom_icon_id="0" foreground="" is_bold="False" name="proxychains" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="2">
 				<rich_text link="webs https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9">https://www.youtube.com/watch?v=jqrd9Ba3VOc&amp;list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl&amp;index=9</rich_text>
 				<rich_text>
@@ -502,7 +502,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1586971110.96" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1587976977.36" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -570,6 +570,11 @@ find / -type f -user bandit7 -group bandit6 -size 33 :   find a file tored somew
 				<rich_text underline="single" weight="heavy">gzip</rich_text>
 				<rich_text> 
  gzip -d data.gz: Decompress file
+ 
+</rich_text>
+				<rich_text underline="single" weight="heavy">ip</rich_text>
+				<rich_text>
+ip addr: Show private  ip 
 
 </rich_text>
 				<rich_text underline="single" weight="heavy">mkdir</rich_text>
@@ -675,11 +680,12 @@ besside-ng  wlan0mon --bssid  &lt;mac&gt; -c &lt;channl num&gt;# listen to this 
  ifconfig </rich_text>
 		</node>
 	</node>
-	<node custom_icon_id="0" foreground="" is_bold="False" name="cmd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1584431613.66" ts_lastsave="1584966037.74" unique_id="20">
+	<node custom_icon_id="0" foreground="" is_bold="False" name="cmd" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1584431613.66" ts_lastsave="1587918513.97" unique_id="20">
 		<rich_text underline="single" weight="heavy">arp -av</rich_text>
 		<rich_text> :Displays and modifies the IP-to-Physical address translation tables used by
 address resolution protocol(arp).
 ipconfig /all: chack your  ip
+ip addr: Show prvate  ip
 netsh wlan show profile: List all wifi  conected
 tracert  </rich_text>
 		<rich_text link="webs http://www.bbc.com">www.bbc.com</rich_text>
