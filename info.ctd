@@ -172,7 +172,7 @@ or open this  url
 				<rich_text link="webs https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/">https://colab.research.google.com/github/jeffheaton/t81_558_deep_learning/</rich_text>
 			</node>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Virtual Environment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="16">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Virtual Environment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1588696656.61" unique_id="16">
 			<rich_text scale="h2" weight="heavy">Creating a virtual environment  </rich_text>
 			<rich_text>
  
@@ -199,6 +199,37 @@ Keeping all your libraries separated by project also makes it easy to zip up the
  
   you can apply a virtual environment anytime simply
 by activating it beforehand.</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="machine learning enviroment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588696656.61" ts_lastsave="1588767314.7" unique_id="22">
+			<rich_text link="webs https://techwithtim.net/tutorials/machine-learning-python/introduction/">https://techwithtim.net/tutorials/machine-learning-python/introduction/</rich_text>
+			<rich_text>
+
+ 
+ By default, environments are installed into the </rich_text>
+			<rich_text family="monospace">envs</rich_text>
+			<rich_text> directory in your conda directory
+ This enviroment is a directory in the </rich_text>
+			<rich_text link="fold QzpcVXNlcnNccm9ja21hblxBbmFjb25kYTNcZW52cw==">C:\Users\[username]\Anaconda3\envs</rich_text>
+			<rich_text>/[your env]
+1.  conda create -n tensor python=3.6 
+  In case ‘error conda not defined run’ :
+              </rich_text>
+			<rich_text link="fold QzpcVXNlcnNccm9ja21hblxBbmFjb25kYTNcU2NyaXB0cw==">C:\Users\rockman\Anaconda3\Scripts</rich_text>
+			<rich_text>\conda create -n tensor python=3.6 
+              or run it from Anaconda Prompt
+2.  activate tensor 
+    In case error ‘conda not defined run’ :
+             C:\Users\rockman\Anaconda3\Scripts\activate tensor
+           ( To Leave the environment use  the deactivate ) 
+
+Verify that the new environment was installed correctly: 
+       conda env list
+       conda list --explicit
+             
+  
+
+
+           </rich_text>
 		</node>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="information" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="11">
