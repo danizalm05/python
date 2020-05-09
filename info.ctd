@@ -533,7 +533,7 @@ wlp4s0		Intel AC	iwlwifi - [phy0]
 			<rich_text link="webs https://overthewire.org">https://overthewire.org</rich_text>
 			<rich_text>
 </rich_text>
-			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1587976977.36" unique_id="21">
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Commands" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1589043369.72" unique_id="21">
 				<rich_text> 
 </rich_text>
 				<rich_text underline="single" weight="heavy">ssh</rich_text>
@@ -571,6 +571,11 @@ base64 -d &lt;file name&gt; : decodes base64 encoded file
 				<rich_text underline="single" weight="heavy">cp</rich_text>
 				<rich_text>
  cp data.txt /tmp/yourname
+ 
+</rich_text>
+				<rich_text underline="single" weight="heavy">curl</rich_text>
+				<rich_text>:  transferring data using various network protocols.  
+ curl -O  &lt;url&gt;: Download file  
  
 </rich_text>
 				<rich_text underline="single" weight="heavy">diff </rich_text>
@@ -672,6 +677,7 @@ sort data.txt | uniq -c  : line of text that occurs only once
 				<rich_text underline="single" weight="heavy">wget</rich_text>
 				<rich_text>
  wget  -mk &lt;url&gt;: Clone a website to  local machine 
+
  
 </rich_text>
 				<rich_text underline="single" weight="heavy">xxd</rich_text>
