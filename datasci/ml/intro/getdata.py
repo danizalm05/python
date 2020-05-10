@@ -13,7 +13,7 @@ import numpy as np
 import sklearn
 from sklearn import linear_model
 from sklearn.utils import shuffle
-
+import pickle
 data = pd.read_csv("student-mat.csv", sep=";")
 # Since our data is separated by semicolons we need to do sep=";"
 data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
@@ -58,3 +58,10 @@ predictions = linear.predict(x_test)  # Gets a list of all predictions
 print("prediction         [G1  G2 ...... ]  Real final result(test)")
 for x in range(len(predictions)):
     print(predictions[x], x_test[x], y_test[x])
+
+#Save our model( we will )write to a new file using pickle.dump())
+
+fn = "studentgrades.pickle"
+with open(fn, "wb") as f:
+    pickle.dump(linear, f)
+print("Model saved to file ", fn)
