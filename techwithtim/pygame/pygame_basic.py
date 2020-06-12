@@ -22,15 +22,16 @@ while run:
     for event in pygame.event.get():  # loop through a list keyboard or mouse events.
         if event.type == pygame.QUIT:  # The red button in the corner of the window is clicked
             run = False  # Ends the game loop
-    keys = pygame.key.get_pressed()  # This will give us a dictonary where each key has a value of 1 or 0. Where 1 is pressed and 0 is not pressed.
+    keys = pygame.key.get_pressed()  # This will give us a dictonary .
+                                     # 1 - key pressed       0 - key not pressed.
 
-    if keys[pygame.K_LEFT]:  # We can check if a key is pressed like this
+    if keys[pygame.K_LEFT]  and x > vel:  # Don't move over screen left side .
         x -= vel
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_RIGHT] and x < 500 - vel - width:  # Don't move over screen left side
         x += vel
-    if keys[pygame.K_UP]:
+    if keys[pygame.K_UP]    and y > vel:
         y -= vel
-    if keys[pygame.K_DOWN]:
+    if keys[pygame.K_DOWN] and y < 500 - height - vel:
         y += vel
 
     win.fill((0, 0, 0))  # Fills the screen with black
