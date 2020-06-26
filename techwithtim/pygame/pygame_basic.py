@@ -4,11 +4,9 @@
 https://techwithtim.net/tutorials/game-development-with-python/pygame-tutorial/pygame-collision/
 """
 import pygame
-bulletSound = pygame.mixer.music.load('img/bullet.mp3')
-hitSound = pygame.mixer.Sound("img/hit.mp3")
-
-music = pygame.mixer.music.load("img/music.mp3")
 pygame.init()
+
+
 
 win = pygame.display.set_mode((500, 480))
 pygame.display.set_caption("First Game")
@@ -23,6 +21,14 @@ bg = pygame.image.load('img/bg.jpg')
 char = pygame.image.load('img/standing.png')
 
 clock = pygame.time.Clock()
+bulletSound = pygame.mixer.music.load('img/bullet.mp3')
+music = pygame.mixer.music.load("img/music.mp3")
+hitSound = pygame.mixer.music.load('img/hit.mp3')
+
+
+pygame.mixer.music.play(-1)
+
+
 score = 0
 
 class player(object):
@@ -171,6 +177,8 @@ while run:
             1]:
             if bullet.x + bullet.radius > goblin.hitbox[0] and bullet.x - bullet.radius < goblin.hitbox[0] + \
                     goblin.hitbox[2]:
+                #hitSound.play()
+
                 goblin.hit()
                 score += 1
                 bullets.pop(bullets.index(bullet))
