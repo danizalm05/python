@@ -39,7 +39,7 @@ Example [A-Z]*[a-z]*$  Example matches: ABCabc, zzzyx, ob egular</rich_text>
 	</node>
 	<node custom_icon_id="0" foreground="" is_bold="False" name="python" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1585396297.43" unique_id="6">
 		<rich_text></rich_text>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="Python Server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="1595420483.57" unique_id="5">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Python Server" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="5">
 			<rich_text> python HTTPServer
  1. Move to the Dir of  your project.
  2. Type in Terminal:
@@ -48,11 +48,7 @@ Example [A-Z]*[a-z]*$  Example matches: ABCabc, zzzyx, ob egular</rich_text>
         python -m http.server
  3. visit </rich_text>
 			<rich_text link="webs http://localhost:8000">http://localhost:8000</rich_text>
-			<rich_text> on your browser.
- 
- </rich_text>
-			<rich_text link="fold QzpcVXNlcnNccm9ja21hblxBbmFjb25kYTM=">C:\Users\rockman\Anaconda3</rich_text>
-			<rich_text>\python3</rich_text>
+			<rich_text> on your browser.</rich_text>
 		</node>
 		<node custom_icon_id="0" foreground="" is_bold="False" name="Deep learning" prog_lang="custom-colors" readonly="False" tags="" ts_creation="0.0" ts_lastsave="0.0" unique_id="13">
 			<rich_text></rich_text>
