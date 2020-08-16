@@ -10,7 +10,7 @@ Data Set Description: https://archive.ics.uci.edu/ml/datasets/Student+Performanc
 
 Data Set:  https://archive.ics.uci.edu/ml/machine-learning-databases/00320/
 """
-
+import torch
 import numpy as np
 import pandas as pd
 from sklearn import linear_model
