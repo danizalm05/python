@@ -204,22 +204,17 @@ Keeping all your libraries separated by project also makes it easy to zip up the
   you can apply a virtual environment anytime simply
 by activating it beforehand.</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="machine learning enviroment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588696656.61" ts_lastsave="1605719303.83" unique_id="22">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="machine learning enviroment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588696656.61" ts_lastsave="1588767314.7" unique_id="22">
 			<rich_text link="webs https://techwithtim.net/tutorials/machine-learning-python/introduction/">https://techwithtim.net/tutorials/machine-learning-python/introduction/</rich_text>
 			<rich_text>
-</rich_text>
-			<rich_text link="webs https://www.tutorialspoint.com/tensorflow/tensorflow_installation.htm">https://www.tutorialspoint.com/tensorflow/tensorflow_installation.htm</rich_text>
-			<rich_text>
+
  
  By default, environments are installed into the </rich_text>
 			<rich_text family="monospace">envs</rich_text>
 			<rich_text> directory in your conda directory
- This enviroment is a directory in the:  </rich_text>
+ This enviroment is a directory in the </rich_text>
 			<rich_text link="fold QzpcVXNlcnNccm9ja21hblxBbmFjb25kYTNcZW52cw==">C:\Users\[username]\Anaconda3\envs</rich_text>
 			<rich_text>/[your env]
-                                                        </rich_text>
-			<rich_text link="fold QzpcVXNlcnNccm9ja21hblxBbmFjb25kYTNcZW52c1x0ZW5zb3JmbG93">C:\Users\rockman\Anaconda3\envs\tensorflow</rich_text>
-			<rich_text>
 1.  conda create -n tensor python=3.6 
   In case ‘error conda not defined run’ :
               </rich_text>
@@ -228,7 +223,7 @@ by activating it beforehand.</rich_text>
               or run it from Anaconda Prompt
 2.  activate tensor 
     In case error ‘conda not defined run’ :
-             C:\Users\rockman\Anaconda3\Scripts\activate tensorflow
+             C:\Users\rockman\Anaconda3\Scripts\activate tensor
            ( To Leave the environment use  the deactivate ) 
 
 Verify that the new environment was installed correctly: 

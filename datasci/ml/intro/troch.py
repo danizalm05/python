@@ -3,6 +3,7 @@ https://jovian.ml/aakashns/01-pytorch-basics
 https://blog.exxactcorp.com/the-most-important-fundamentals-of-pytorch-you-should-know/
 '''
 
+
 import torch
 '''t1 = torch.tensor(4.)
 print("t1:", t1, t1.dtype)
