@@ -204,7 +204,7 @@ Keeping all your libraries separated by project also makes it easy to zip up the
   you can apply a virtual environment anytime simply
 by activating it beforehand.</rich_text>
 		</node>
-		<node custom_icon_id="0" foreground="" is_bold="False" name="machine learning enviroment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588696656.61" ts_lastsave="1609347880.65" unique_id="22">
+		<node custom_icon_id="0" foreground="" is_bold="False" name="machine learning enviroment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1588696656.61" ts_lastsave="1605719303.83" unique_id="22">
 			<rich_text link="webs https://techwithtim.net/tutorials/machine-learning-python/introduction/">https://techwithtim.net/tutorials/machine-learning-python/introduction/</rich_text>
 			<rich_text>
 </rich_text>
@@ -228,7 +228,7 @@ by activating it beforehand.</rich_text>
               or run it from Anaconda Prompt
 2.  activate tensor 
     In case error ‘conda not defined run’ :
-              C:\Users\rockman\Anaconda3\Scripts\activate tensorflow
+             C:\Users\rockman\Anaconda3\Scripts\activate tensorflow
            ( To Leave the environment use  the deactivate ) 
 
 Verify that the new environment was installed correctly: 
