@@ -25,18 +25,37 @@ class MLP:
     print(layers)#[3, 3, 3, 2]
     weights = []
     for i in range(len(layers) - 1):  # len(layers) = 3
-        w = np.random.rand(layers[i], layers[i + 1])  # 3x3, 3x3, 3x2,
+        w = np.random.rand(layers[i], layers[i + 1])  # [3x3], [3x3], [3x2],
         weights.append(w)
-        print(i, "]", w)
+        #print(i, "]", w)
 
     self.weights = weights    
-    #5:30
-    #print(self.weights)
 
 
+    #for w in self.weights:
+       # print("-----------\n", w)
 
+  def forward_propagate(self, inputs):
+        """Computes forward propagation of the network based on input signals.
+        Args:
+            inputs (ndarray): Input signals
+        Returns:
+            activations (ndarray): Output values
 
-
+        """
+        # the input layer activation is just the input itself
+        activations = inputs
+        for w in self.weights:
+            # calculate matrix multiplication between previous activation and weight matrix
+            net_inputs = np.dot(activations, w)
+            print("-----------\n", w)
 if __name__ == "__main__":
     # create a Multilayer Perceptron
     mlp = MLP()
+    # set random values for network's input
+   # inputs = np.random.rand(mlp.num_inputs)
+
+    # perform forward propagation
+    #mlp.forward_propagate(inputs)
+
+    #11:00
