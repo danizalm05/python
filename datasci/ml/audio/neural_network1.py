@@ -8,9 +8,8 @@ import numpy as np
 #MLP  Multilayer Perceptron
 class MLP:
   def __init__(self, num_inputs=3, hidden_layers=[3, 3], num_outputs=2):
-    """Constructor for the MLP. Takes the number of inputs,
-            a variable number of hidden layers, and number of outputs
-        Args:
+    """Constructor for the MLP.  (Multi layer Perceptron)
+       Args:
             num_inputs (int): Number of inputs
             hidden_layers (list): A list of ints for the hidden layers
             num_outputs (int): Number of outputs
@@ -46,16 +45,28 @@ class MLP:
         # the input layer activation is just the input itself
         activations = inputs
         for w in self.weights:
-            # calculate matrix multiplication between previous activation and weight matrix
+            #  matrix multiplication between previous activation and weight matrix
             net_inputs = np.dot(activations, w)
-            print("-----------\n", w)
+            # print("-----------\n", w)
+
+            activations = self._sigmoid(net_inputs)
+
+        return activations
+
+
+  def _sigmoid(self, x):
+    y = 1.0 / (1 + np.exp(-x))
+    return y
+
+
+
 if __name__ == "__main__":
     # create a Multilayer Perceptron
-    mlp = MLP()
+   mlp = MLP()
     # set random values for network's input
-   # inputs = np.random.rand(mlp.num_inputs)
+   inputs = np.random.rand(mlp.num_inputs)
 
     # perform forward propagation
-    #mlp.forward_propagate(inputs)
+   mlp.forward_propagate(inputs)
 
-    #11:00
+    #16:00
