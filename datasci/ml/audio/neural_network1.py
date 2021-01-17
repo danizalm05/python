@@ -5,36 +5,39 @@ Valerio Velardo - The Sound of AI
   https://www.youtube.com/watch?v=0oWnheK-gGk
   """
 import numpy as np
-#MLP  Multilayer Perceptron
+
+
+#  MLP  Multilayer Perceptron
+
+
 class MLP:
-  def __init__(self, num_inputs=3, hidden_layers=[3, 3], num_outputs=2):
-    """Constructor for the MLP.  (Multi layer Perceptron)
+    def __init__(self, num_inputs=3, hidden_layers=[3, 3], num_outputs=2):
+        """Constructor for the MLP.  (Multi layer Perceptron)
        Args:
             num_inputs (int): Number of inputs
             hidden_layers (list): A list of ints for the hidden layers
             num_outputs (int): Number of outputs
     """
 
-    self.num_inputs = num_inputs
-    self.hidden_layers = hidden_layers
-    self.num_outputs = num_outputs
+        self.num_inputs = num_inputs
+        self.hidden_layers = hidden_layers
+        self.num_outputs = num_outputs
 
-    # create a generic representation of the layers
-    layers = [num_inputs] + hidden_layers + [num_outputs]
-    print(layers)#[3, 3, 3, 2]
-    weights = []
-    for i in range(len(layers) - 1):  # len(layers) = 3
-        w = np.random.rand(layers[i], layers[i + 1])  # [3x3], [3x3], [3x2],
-        weights.append(w)
-        #print(i, "]", w)
+        # create a generic representation of the layers
+        layers = [num_inputs] + hidden_layers + [num_outputs]
+        print(layers)  # [3, 3, 3, 2]
+        weights = []
+        for i in range(len(layers) - 1):  # len(layers) = 3
+            w = np.random.rand(layers[i], layers[i + 1])  # [3x3], [3x3], [3x2],
+            weights.append(w)
+            # print(i, "]", w)
 
-    self.weights = weights    
+        self.weights = weights
 
+        # for w in self.weights:
+        # print("-----------\n", w)
 
-    #for w in self.weights:
-       # print("-----------\n", w)
-
-  def forward_propagate(self, inputs):
+    def forward_propagate(self, inputs):
         """Computes forward propagation of the network based on input signals.
         Args:
             inputs (ndarray): Input signals
@@ -53,20 +56,20 @@ class MLP:
 
         return activations
 
-
-  def _sigmoid(self, x):
-    y = 1.0 / (1 + np.exp(-x))
-    return y
-
+    def _sigmoid(self, x):
+        y = 1.0 / (1 + np.exp(-x))
+        return y
 
 
 if __name__ == "__main__":
     # create a Multilayer Perceptron
-   mlp = MLP()
+    mlp = MLP()
     # set random values for network's input
-   inputs = np.random.rand(mlp.num_inputs)
+    inputs = np.random.rand(mlp.num_inputs)
 
     # perform forward propagation
-   mlp.forward_propagate(inputs)
+    output = mlp.forward_propagate(inputs)
 
-    #16:00
+    # 16:00 
+    print("Network Inputs  : {}".format(inputs))
+    print("Network Output: {}".format(output))
