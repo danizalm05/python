@@ -3,6 +3,7 @@ Valerio Velardo - The Sound of AI
   6- Implementing a neural network from scratch in Python
   https://github.com/musikalkemist/DeepLearningForAudioWithPython
   https://www.youtube.com/watch?v=0oWnheK-gGk
+  https://www.youtube.com/watch?v=fMqL5vckiU0&list=PL-wATfeyAMNrtbkCNsLcpoAyBBRJZVlnf
   """
 import numpy as np
 
