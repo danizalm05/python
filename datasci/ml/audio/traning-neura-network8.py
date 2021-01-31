@@ -41,17 +41,18 @@ class MLP:
         # save derivatives per layer
         derivatives = []
         for i in range(len(layers) - 1):
-            d = np.zeros((layers[i], layers[i + 1]))
+            d = np.zeros((layers[i], layers[i + 1]))# d is a matrix of size layers[i] X layers[i + 1]
             derivatives.append(d)
-            print("-- derivatives.append(d)----\n",i,'-',  derivatives)
-        self.derivatives = derivatives#list of 3 arrrays of zeros size [3x3], [3x3], [3x2]
-        print("--self.derivatives )----\n",self.derivatives)
+
+        self.derivatives = derivatives  # list of 3 arrays of zeros   [3x3], [3x3], [3x2]
+
         # save activations per layer
         activations = []
         for i in range(len(layers)):
             a = np.zeros(layers[i])
+
             activations.append(a)
-        self.activations = activations
+        self.activations = activations# list of  vectors of zeros [3, 3, 3, 2]
 
 
 
@@ -65,6 +66,12 @@ class MLP:
         """
         # the input layer activation is just the input itself
         activations = inputs
+
+        # save the activations for backpropogation
+        self.activations[0] = activations
+
+
+
         for w in self.weights:
             #  matrix multiplication between previous activation and weight matrix
             net_inputs = np.dot(activations, w)
