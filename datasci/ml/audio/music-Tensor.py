@@ -30,7 +30,7 @@ def generate_dataset(num_samples, test_size=0.33):
 
 if __name__ == "__main__":
     ratio = 0.3  # Ratio of samples used as test set
-    samplesSize = 2000  # num of  samples
+    samplesSize = 5000  # num of  samples
     x_train, x_test, y_train, y_test = \
         generate_dataset(samplesSize, ratio)
 
@@ -47,4 +47,17 @@ if __name__ == "__main__":
     model.compile(optimizer=optimizer, loss='mse')  # MSE mean squared error
 
     # train model
-    model.fit(x_train, y_train, epochs=10)
+    model.fit(x_train, y_train, epochs=100)
+
+    # evaluate model on test set
+    print("\nEvaluation on the test set:")
+    model.evaluate(x_test, y_test, verbose=2)
+
+    # get predictions
+    data = np.array([[0.1, 0.2], [0.2, 0.2]])
+    predictions = model.predict(data)
+
+    # print predictions
+    print("\nPredictions:")
+    for d, p in zip(data, predictions):
+        print("{} + {} = {}".format(d[0], d[1], p[0]))
