@@ -4,9 +4,11 @@ OpenCV Course - Full Tutorial with Python
  https://www.youtube.com/watch?v=oXlwWbU8l2o
  https://github.com/jasmcaus/opencv-course/blob/master/Section%20%231%20-%20Basics/basic_functions.py
 
-
+Murtaza's Workshop - Robotics and AI  17:14  27:34
+ https://www.youtube.com/watch?v=WQeoO7MI0Bs&list=PLMoSUbG1Q_r9p7iYBg6z6tZP002DAJ41H
  """
 import cv2 as cv
+import numpy as np
 
 def rescaleFrame(frame, scale=0.75):
     # Images, Videos and Live Video
@@ -25,7 +27,7 @@ path = BASE_FOLDER +  mimg
 img0 = cv.imread(path)
 img  = rescaleFrame(img0,  scale=.25)
 cv.imshow('Original', img)
-
+kernel = np.ones((5, 5), np.uint8)# 5x5 matrix of 1s
 
 # Resize
 resized = cv.resize(img, (700,200), interpolation=cv.INTER_CUBIC)
@@ -35,12 +37,15 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray', gray)
 
 # Blur
-blur = cv.GaussianBlur(img, (7,7), cv.BORDER_DEFAULT)
+
+sz = 7 # kernal size  must be  odd   number
+blur = cv.GaussianBlur(img, (sz,sz), cv.BORDER_DEFAULT)
 cv.imshow('Blur', blur)
 
 # Edge Cascade
-
-cannyblur = cv.Canny(blur, 125, 175)
+tx = 125
+ty =175 #treshold tx,ty
+cannyblur = cv.Canny(blur, tx, ty)
 cv.imshow('Canny Edges blur', cannyblur)
 
  
@@ -51,8 +56,12 @@ cv.imshow('Canny Edges', canny)
 dilated = cv.dilate(canny, (7,7), iterations=3)
 cv.imshow('Dilated', dilated)
 
-# Eroding
-eroded = cv.erode(dilated, (7,7), iterations=3)
+
+imgDialation = cv.dilate(canny,kernel,iterations=5)
+cv.imshow('imgDialation', imgDialation)
+
+# Eroding (oposite  of  Dilating
+eroded = cv.erode(dilated, (7,7), iterations=1)
 cv.imshow('Eroded', eroded)
 
 
