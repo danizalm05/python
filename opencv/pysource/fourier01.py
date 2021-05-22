@@ -22,7 +22,7 @@ list_images = glob.iglob(BASE_FOLDER+"letters/*")
 print(list_images)
 #print(path)
 for image_title in list_images:
-    print(image_title)
+    #print(image_title)
     img = cv2.imread(image_title, cv2.IMREAD_GRAYSCALE)
     f = np.fft.fft2(img)
     fshift = np.fft.fftshift(f)
