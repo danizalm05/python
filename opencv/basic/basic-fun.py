@@ -19,9 +19,10 @@ def rescaleFrame(frame, scale=0.75):
 
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
-
-BASE_FOLDER = 'C:/Users/rockman/Pictures/Saved Pictures/'
-mimg = "bz.JPG"
+#BASE_FOLDER = 'C:/Users/rockman/Pictures/Saved Pictures/fourier/'
+BASE_FOLDER = 'C:/Users/gilfm/Pictures/Saved Pictures/'
+#BASE_FOLDER = 'C:/Users/rockman/Pictures/Saved Pictures/'
+mimg = "lena.png"
 path = BASE_FOLDER +  mimg
 
 img0 = cv.imread(path)
@@ -66,7 +67,7 @@ cv.imshow('Eroded', eroded)
 
 
 # Cropping
-cropped = img[50:200, 200:400]
-cv.imshow('Cropped', cropped)
+cropped = img[50:80, 200:230]
+#cv.imshow('Cropped', cropped)
 
 cv.waitKey(0)
