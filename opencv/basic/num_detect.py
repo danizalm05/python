@@ -13,12 +13,6 @@ image_source = "image"
 #image_source = "camera"
 
 ################################
-minArea = 500
-BASE_FOLDER = 'C:/Users/rockman/Pictures/Saved Pictures/'
-xml_file = "haarcascade_russian_plate_number.xml"
-nPlateCascade = cv2.CascadeClassifier(xml_file)
-color = (255,0,255)
-count = 0
 frameWidth = 640
 frameHeight = 480
 ####################################################
@@ -28,6 +22,8 @@ if image_source == "image":
    mimg = "p1.JPG"
    path = BASE_FOLDER +  mimg
    img = cv2.imread(path)
+   print(path)
+   cv2.imshow("imgimg", path)
 
 if image_source == "camera":
    cap = cv2.VideoCapture(0)
