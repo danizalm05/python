@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 '''
-python for image processing APEER
-29scikit_basic.py
+
+Apeer_micro
+Dr Sreenivas Bhattiprolu
 quick overview of scikit-image using basic image processing examples.
 https://www.youtube.com/watch?v=mQkcf8kgit8&list=PLHae9ggVvqPgyRQQOtENr6hK0m1UquGaG&index=30
 https://github.com/bnsreenu/python_for_image_processing_APEER/blob/master/tutorial29_image_processing_using_scikit-image.py
@@ -9,8 +10,10 @@ https://github.com/bnsreenu/python_for_image_processing_APEER/blob/master/tutori
 
 from PIL import Image
 
+USER1 = 'gilfm'
+USER2 = 'rockman'
+BASE_FOLDER = 'C:/Users/' + USER2 + '/Pictures/Saved Pictures/'
 
-BASE_FOLDER = 'C:/Users/gilfm/Pictures/Saved Pictures/'
 mimg = "p1.jpg"
 path = BASE_FOLDER + mimg
 

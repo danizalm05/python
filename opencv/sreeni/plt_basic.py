@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 # create a 8x8 matrix of two numbers-0 and 1.
 # O represents dark color and 1 represents bright color
 arr=np.array([[1,0]*4,[0,1]*4]*4)
+arr2=np.array([[1,1]*4,[1,1]*4]*4)
 print(arr)
 # use the imshow function to display the image made from the above array
 plt.imshow(arr)
@@ -57,4 +58,27 @@ x = np.array([2,2,8,1,15,8,12,9,7,3,11,4,7,14,12])
 y = np.array([100,105,84,105,90,99,90,95,94,100,79,112,91,80,85])
 plt.scatter(x, y, color = '#88c999')
 
+plt.show()
+
+
+fig, axes = plt.subplots(nrows=2, ncols=2, sharex=True, sharey=True,
+                         figsize=(18, 18))
+ax = axes.ravel()
+
+ax[0].imshow(arr, cmap=plt.cm.gray)
+ax[0].set_title('Original image')
+
+ax[1].imshow(arr2, cmap=plt.cm.gray)
+ax[1].set_title('Roberts Edge Detection')
+
+ax[2].imshow(arr, cmap=plt.cm.gray)
+ax[2].set_title('Sobel')
+
+ax[3].imshow(arr2, cmap=plt.cm.gray)
+ax[3].set_title('Scharr')
+
+for a in ax:
+    a.axis('off')
+
+plt.tight_layout()
 plt.show()

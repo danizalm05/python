@@ -1,7 +1,11 @@
 '''
+Apeer_micro
+Dr Sreenivas Bhattiprolu
+https://twitter.com/digitalsreeni
+
 Tutorial 30 - Basic image processing using opencv.
 Apeer_micro
-
+Dr Sreenivas Bhattiprolu
 https://www.youtube.com/watch?v=3J1YG17FDjw&list=PLHae9ggVvqPgyRQQOtENr6hK0m1UquGaG&index=31
 https://github.com/bnsreenu/python_for_image_processing_APEER/blob/master/tutorial30_image_processing_using_opencv.py
 Video Playlist:
@@ -18,11 +22,13 @@ from matplotlib import pyplot as plt
 import cv2
 import scipy.fftpack
 
-BASE_FOLDER = 'C:/Users/gilfm/Pictures/Saved Pictures/fourier/'
-
+user1 = "gilfm"
+user2 = "rockman"
+BASE_FOLDER = "C:/Users/"+ user2 + "/Pictures/Saved Pictures/"
+print(BASE_FOLDER)
 img0 = cv2.imread(BASE_FOLDER + "lena.png",0)
-img1 = cv2.imread(BASE_FOLDER + 'modrain.jpg',0)
-img2 = cv2.imread(BASE_FOLDER + 'h0.jpg',0)
+img1 = cv2.imread(BASE_FOLDER + 'p3.jpg',0)
+img2 = cv2.imread(BASE_FOLDER + 'p2.jpg',0)
 
 print(BASE_FOLDER + "lena.png")
 
@@ -58,8 +64,8 @@ cv2.destroyAllWindows()
 #Pixel values, split and merge channels,
 
 
-grey_img = cv2.imread(BASE_FOLDER + "modrain.jpg", 0)
-img      = cv2.imread(BASE_FOLDER + "modrain.jpg", 1)   #Color is BGR not RGB
+grey_img = cv2.imread(BASE_FOLDER + "p1.jpg", 0)
+img      = cv2.imread(BASE_FOLDER + "p1.jpg", 1)   #Color is BGR not RGB
 h, w, c = img.shape
 print('width:  ', w)
 print('height: ', h)

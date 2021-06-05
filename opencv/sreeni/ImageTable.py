@@ -1,6 +1,8 @@
 '''
 Display tame of images
 example:
+  from ImageTable  import  stackImages
+  
   scale = 0.6
   img_array = ([img, img1, img2], [img3 , img4 , img5])
   imgStack = stackImages(scale, img_array)

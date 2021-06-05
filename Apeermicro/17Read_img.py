@@ -11,15 +11,17 @@ Apeer_micro
 
 https://www.youtube.com/watch?v=52pMFnkDU-4
 https://github.com/bnsreenu/python_for_microscopists/blob/master/017-Reading_Images_in_Python.py
-48:00
+
 '''
+
 import cv2
 import glob
 import os
 from PIL import Image
-
-
-BASE_FOLDER = 'C:/Users/gilfm/Pictures/Saved Pictures/*'
+#C:\Users\rockman\Anaconda3\envs\tensorflow
+USER1 = 'gilfm'
+USER2 = 'rockman'
+BASE_FOLDER = 'C:/Users/' + USER2 + '/Pictures/Saved Pictures/*'
 
 file_list = glob.glob(BASE_FOLDER)
 img_file_list = []
