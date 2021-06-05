@@ -8,6 +8,8 @@ https://github.com/bnsreenu/python_for_microscopists/tree/master/images
 
 BSE_Google_noisy.jpg
 https://raw.githubusercontent.com/bnsreenu/python_for_microscopists/master/images/BSE_Google_noisy.jpg
+
+
 Neuron.jpg 
 https://raw.githubusercontent.com/bnsreenu/python_for_microscopists/master/images/Neuron.jpg
 
@@ -19,7 +21,7 @@ from matplotlib import pyplot as plt
 from ImageTable  import  stackImages
 USER1 = "gilfm"
 USER2 = "rockman"
-BASE_FOLDER = 'C:/Users/'+ USER2 +'/Pictures/Saved Pictures/'
+BASE_FOLDER = 'C:/Users/'+ USER1 +'/Pictures/Saved Pictures/'
 # BSE_Google_noisy
 # url00 ="raw.githubusercontent.com/bnsreenu/python_for_microscopists/master/images/BSE_Google_noisy.jpg"
 img_name = "BSE_Google_noisy.jpg" 
