@@ -10,12 +10,14 @@ import numpy as np
 import glob
 import ImageTable
 
-#BASE_FOLDER = 'C:/Users/rockman/Pictures/Saved Pictures/fourier/'
-BASE_FOLDER = 'C:/Users/gilfm/Pictures/Saved Pictures/'
+usr1 ="rockman"
+usr2 ="gilfm"
+ 
+BASE_FOLDER = 'C:/Users/'+usr1 +'/Pictures/Saved Pictures/'
 
 img_name = "lena.png"
 path = BASE_FOLDER + img_name
-
+print (path)
 
 img1 = cv2.imread(path) # load an image
 img  = cv2.imread(path, 0)

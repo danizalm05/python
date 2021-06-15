@@ -5,12 +5,6 @@ Sreenivas Bhattiprolu
 105 - What is Fourier Transform?
 https://www.youtube.com/watch?v=lzR86lz1Sg8&list=PLZsOBAyNTZwbIjGnolFydAN33gyyGP7lT&index=107
 
-
-
-
-
-
-
 https://github.com/bnsreenu/python_for_microscopists/blob/master/105_what_is_fourier_transform.py'
 '''
 
@@ -34,7 +28,7 @@ y += max(y) # offset sine wave by the max value to go out of negative range of s
 # create 2-D array of sine-wave
 img = np.array( [ [y[j]*127 for j in range(256)] for i in range(256)] , dtype=np.uint8)
 img = np.rot90(img)
-dft = cv2.dft(np.float32(img0), flags=cv2.DFT_COMPLEX_OUTPUT)
+dft = cv2.dft(np.float32(img), flags=cv2.DFT_COMPLEX_OUTPUT)
 dft_shift = np.fft.fftshift(dft)
 
 # magnitude_spectrum =   20*log [magnitude(dft[real]  dft[imanry]
@@ -46,9 +40,9 @@ magnitude_spectrum = 20 * np.log((cv2.magnitude(dft_shift[:, :, 0], dft_shift[:,
 
 fig = plt.figure(figsize=(14, 8))#   8 is width, 14 is height
 ax1 = fig.add_subplot(2,2,1)
-ax1.imshow(img0)
+ax1.imshow(img)
 ax1.title.set_text('Input Image')
-ax2 = fig.add_subplot(2,2,4)
+ax2 = fig.add_subplot(2,2,3)
 ax2.imshow(magnitude_spectrum)
 ax2.title.set_text('FFT of image')
 plt.show()

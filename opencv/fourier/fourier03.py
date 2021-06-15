@@ -11,8 +11,9 @@ from matplotlib import pyplot as plt
 import numpy as np
 import ImageTable
 #############
-BASE_FOLDER = 'C:/Users/gilfm/Pictures/Saved Pictures/'
-
+usr1 ="rockman"
+usr2 ="gilfm"
+BASE_FOLDER = 'C:/Users/'+usr1 +'/Pictures/Saved Pictures/'
 img_name = "lena.png"
 path = BASE_FOLDER + img_name
 
