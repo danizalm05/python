@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=p5Z_GGRCI5s
 https://www.computervision.zone/courses/finger-counter/lesson/finger-counter-lesson-2/   
 https://www.computervision.zone/courses/finger-counter/lesson/finger-counter-code/
 https://google.github.io/mediapipe/solutions/hands.html
-26:50
+30:00
 
 """
 import cv2
@@ -31,22 +31,8 @@ while True:
     totalFingers = 0
     if len(lmList) != 0:
 
-         fingers = []
-
-         # Thumb (tipIds[0][])
-         if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1]: #Compre x aixs
-             fingers.append(1)
-         else:
-             fingers.append(0)
-
-         # 4 Fingers
-         for id in range(1, 5):#tipIds is alist that hold the id's of tip of 5 fingers
-             if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
-                 fingers.append(1) #finger is open
-             else:
-                 fingers.append(0)#finger is close
-             #print(fingers)
-
+         fingers = detector.fingersUp()  #
+         print("fingers =", fingers)
 
          totalFingers = fingers.count(1)#Count the values of '1'  in the list
          cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)

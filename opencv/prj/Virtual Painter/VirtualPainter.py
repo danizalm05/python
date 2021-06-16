@@ -4,9 +4,10 @@
 AI Virtual Painter | OpenCV Python | Computer Vision
 
 Murtaza's Workshop
+https://www.computervision.zone/courses/ai-virtual-painter/lesson/ai-virtual-painter-virtualpainter-py/
 https://www.computervision.zone/courses/ai-virtual-painter/lesson/ai-virtual-painter-lesson/  
-   
-29:00
+https://www.youtube.com/watch?v=ZiwZaAVbXQo   
+37:00
 
 """
 import cv2
@@ -49,14 +50,22 @@ while True:
     if len(lmList) != 0:
        #print(lmList) #[id, x, y]
        # tip of index and middle fingers
-       x1, y1 = lmList[8][1:]# x,y of id=8 index finger (move cursor)
-       x2, y2 = lmList[12][1:]# x,y of id=8 middle finger (move cursor + left button )
-       print(x1, y1,lmList[8])
+       x1, y1 = lmList[8][1:]  # x,y of id=8 index finger (move cursor)
+       x2, y2 = lmList[12][1:] # x,y of id=8 middle finger (move cursor + left button)
+       #print(x1, y1,lmList[8])
 
        # 3. Check which fingers are up
-       fingers = detector.fingersUp()
+       fingers = detector.fingersUp()#
+       #print("fingers =", fingers)
 
+       # 4. If Selection Mode - Two finger are up
+       if fingers[1] and fingers[2]:
+           # xp, yp = 0, 0
+           print("Selection Mode")
+       # 5. If Drawing Mode - Index finger is up
+       if fingers[1] and fingers[2] == False:
 
+           print("Drawing Mode")
     img[0:125, 0:1280] = header
     cv2.imshow("Image", img)
     if cv2.waitKey(1) & 0xFF == ord('q'):

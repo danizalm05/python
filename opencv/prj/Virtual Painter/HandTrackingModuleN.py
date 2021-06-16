@@ -23,7 +23,9 @@ class handDetector():
         self.hands = self.mpHands.Hands(self.mode, self.maxHands,
                                         self.detectionCon, self.trackCon)
         self.mpDraw = mp.solutions.drawing_utils
-#Draw the  landmarks  on the hand in the frame
+        self.tipIds = [4, 8, 12, 16, 20]
+#Method 1 :findHands
+#Draw the  landmarks  on the hand image  in the frame
     def findHands(self, img, draw=True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.hands.process(imgRGB)
@@ -36,9 +38,12 @@ class handDetector():
                                                self.mpHands.HAND_CONNECTIONS)
         return img
 
+    # Method 2  findHands:  Create a position list.
+    # 3 items for every item in the list.
+    # The  ID pf the position and x,y index
     def findPosition(self, img, handNo=0, draw=True):
 
-        lmList = []
+        self.lmList = []
         if self.results.multi_hand_landmarks:
             myHand = self.results.multi_hand_landmarks[handNo]
             for id, lm in enumerate(myHand.landmark):
@@ -46,14 +51,36 @@ class handDetector():
                 h, w, c = img.shape
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 # print(id, cx, cy)
-                lmList.append([id, cx, cy])
+                self.lmList.append([id, cx, cy])
                 if draw:
                     if id == 4:
                       cv2.circle(img, (cx, cy), 15, (25 , 233, 255), cv2.FILLED)
                     else:
                        cv2.circle(img, (cx, cy), 7, (25 , 233, 0), cv2.FILLED)
                   
-        return lmList
+        return self.lmList
+
+
+    # Method 3  fingersUp: count how many  fingers are up
+    def fingersUp(self):
+
+        fingers = []
+        # Thumb (tipIds[0][]) There is an issue with the  next command
+        if self.lmList[self.tipIds[0]][1] < self.lmList[self.tipIds[0] - 1][1]:  # Compre x aixs
+            fingers.append(1)
+        else:
+            fingers.append(0)
+        # 4 Fingers
+        for id in range(1, 5):  # tipIds is alist that hold the id's of tip of 5 fingers
+            if self.lmList[self.tipIds[id]][2] < self.lmList[self.tipIds[id] - 2][2]:
+                fingers.append(1)  # finger is open
+            else:
+                fingers.append(0)  # finger is close
+            # print(fingers)
+            # totalFingers = fingers.count(1)
+        return fingers
+
+
 
 camera_num = 0
 def main():
