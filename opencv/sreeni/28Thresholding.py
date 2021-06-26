@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 https://www.youtube.com/watch?v=WQK_oOWW5Zo
+https://github.com/bnsreenu/python_for_microscopists
 https://github.com/bnsreenu/python_for_microscopists/blob/master/028-image_processing_in_openCV_intro2-Thresholding.py
-
-Morphological transformations
-#Let us take the image from above that we got from OTSU and try various filters.
 
 11:00
 """
