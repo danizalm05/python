@@ -9,18 +9,22 @@ https://github.com/bnsreenu/python_for_image_processing_APEER/blob/master/tutori
 '''
 
 from PIL import Image
+import getpass
+import matplotlib.pyplot as plt
+from skimage import io, color
+from skimage.transform import rescale, resize, downscale_local_mean
 
-USER1 = 'gilfm'
-USER2 = 'rockman'
-BASE_FOLDER = 'C:/Users/' + USER2 + '/Pictures/Saved Pictures/'
+
+BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Pictures/Saved Pictures/'
+     # "modrain.jpg"#"grains.jpg" #
 
 mimg = "p1.jpg"
 path = BASE_FOLDER + mimg
 
-import matplotlib.pyplot as plt
 
-from skimage import io, color
-from skimage.transform import rescale, resize, downscale_local_mean
+
+
+
 
 img0 = io.imread(path )
 print (img0.shape)#This is a color image (900, 675, 3)

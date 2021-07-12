@@ -51,7 +51,7 @@ def imreadURL(url, color):
 u2 = "https://i.ytimg.com/vi/MrggzYPHjYA/maxresdefault.jpg" #monky
 
 BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Pictures/Saved Pictures/'
-img_name = "monkey.jpg"     # "modrain.jpg"#"grains.jpg" #
+img_name = "p1.jpg"     # "modrain.jpg"#"grains.jpg" #
 path = BASE_FOLDER + img_name
 print(path)
 img0 = cv2.imread(path)

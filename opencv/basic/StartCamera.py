@@ -40,6 +40,14 @@ while True:
 import cv2 as cv
 cap = cv.VideoCapture(0)
 
+# Get some properties of VideoCapture
+frame_width = cap.get(cv.CAP_PROP_FRAME_WIDTH)
+frame_height = cap.get(cv.CAP_PROP_FRAME_HEIGHT)
+fps = cap.get(cv.CAP_PROP_FPS)
+# Print these values:
+print("CV_CAP_PROP_FRAME_WIDTH: '{}'".format(frame_width))
+print("CV_CAP_PROP_FRAME_HEIGHT : '{}'".format(frame_height))
+print("CAP_PROP_FPS : '{}'".format(fps))
 #cap.open (0)
 if not cap.isOpened():
     print("Cannot open camera")
@@ -56,6 +64,9 @@ while True:
     # Display the resulting frame
     cv.imshow('frame', gray)
     if cv.waitKey(1) == ord('q'):
+        frame_name = "camera_frame_{}.png".format(1)
+        print(frame_name)
+        cv.imwrite(frame_name, frame)
         break
 # When everything done, release the capture
 cap.release()

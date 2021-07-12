@@ -22,9 +22,11 @@ from matplotlib import pyplot as plt
 import cv2
 import scipy.fftpack
 
-user1 = "gilfm"
-user2 = "rockman"
-BASE_FOLDER = "C:/Users/"+ user2 + "/Pictures/Saved Pictures/"
+import getpass
+
+BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Pictures/Saved Pictures/'
+     # "modrain.jpg"#"grains.jpg" #
+
 print(BASE_FOLDER)
 img0 = cv2.imread(BASE_FOLDER + "lena.png",0)
 img1 = cv2.imread(BASE_FOLDER + 'p3.jpg',0)

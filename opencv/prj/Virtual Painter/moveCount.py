@@ -7,13 +7,14 @@ import cv2
 import numpy as np
 import getpass
 import imutils
+
 #BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Pictures/Saved Pictures/'
 
-BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Videos/'
-vid_name = "highway.mp4"
+BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Videos/Captures/'
+vid_name = "cars.mp4"
 path = BASE_FOLDER + vid_name
 print(path)
-
+ 
 class Box:
     def __init__(self, start_point, width_height):
         self.start_point = start_point

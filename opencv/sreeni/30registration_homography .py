@@ -24,8 +24,8 @@ import getpass
 BASE_FOLDER = 'C:/Users/'+ getpass.getuser() +'/Pictures/Saved Pictures/'
      # "modrain.jpg"#"grains.jpg" #
 
-path1 = BASE_FOLDER + "bb.jpg"#"monkey_distorted.jpg"
-path2 = BASE_FOLDER + "b1.jpg"#"monkey.jpg"
+path1 = BASE_FOLDER + "p1.jpg"#"monkey_distorted.jpg"
+path2 = BASE_FOLDER + "p2.jpg"#"monkey.jpg"
 
 im1 = cv2.imread(path1)  # Image that needs registered
 im2 = cv2.imread(path2)  # train Image
